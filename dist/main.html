@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="ru" class="animate-disabled">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Главная</title>
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="format-detection" content="telephone=no">
+
+        <link href="css/vendors~index.chunk.css?1658808919903" rel="stylesheet">
+        <link href="css/index.css?1658808919903" rel="stylesheet">
+        <link href="css/components.css?1658808919903" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class="header" data-header data-animate-custom>
+            <div class="header__container container">
+                <div class="header__content">
+
+                    <a href=javascript:void(0); class="header__logo" data-animate>
+                        <span class="icon icon--fit" aria-hidden="true">
+                            <svg width="246" height="22" viewBox="0 0 246 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.904 21V1.12H5.496V16.968H15.128V21H0.904ZM25.6354 21.168C24.1421 21.168 22.7888 20.888 21.5754 20.328C20.3808 19.7493 19.3448 18.984 18.4674 18.032C17.6088 17.0613 16.9461 15.9787 16.4794 14.784C16.0128 13.5707 15.7794 12.32 15.7794 11.032C15.7794 9.70667 16.0221 8.44667 16.5074 7.252C17.0114 6.05733 17.7021 4.99333 18.5794 4.06C19.4754 3.108 20.5301 2.36133 21.7434 1.82C22.9568 1.27867 24.2821 1.008 25.7194 1.008C27.1941 1.008 28.5288 1.29733 29.7234 1.876C30.9368 2.436 31.9728 3.20133 32.8314 4.172C33.7088 5.14267 34.3808 6.23467 34.8474 7.448C35.3141 8.64267 35.5474 9.86533 35.5474 11.116C35.5474 12.4413 35.3048 13.7013 34.8194 14.896C34.3341 16.0907 33.6434 17.164 32.7474 18.116C31.8514 19.0493 30.7968 19.796 29.5834 20.356C28.3888 20.8973 27.0728 21.168 25.6354 21.168ZM20.4554 11.088C20.4554 11.8533 20.5674 12.6 20.7914 13.328C21.0154 14.0373 21.3421 14.672 21.7714 15.232C22.2194 15.792 22.7701 16.24 23.4234 16.576C24.0768 16.912 24.8234 17.08 25.6634 17.08C26.5408 17.08 27.3061 16.912 27.9594 16.576C28.6128 16.2213 29.1541 15.7547 29.5834 15.176C30.0128 14.5973 30.3301 13.9533 30.5354 13.244C30.7594 12.516 30.8714 11.7787 30.8714 11.032C30.8714 10.2667 30.7594 9.52933 30.5354 8.82C30.3114 8.11067 29.9754 7.476 29.5274 6.916C29.0794 6.33733 28.5288 5.88933 27.8754 5.572C27.2221 5.25467 26.4848 5.096 25.6634 5.096C24.7861 5.096 24.0208 5.264 23.3674 5.6C22.7328 5.936 22.1914 6.39333 21.7434 6.972C21.3141 7.532 20.9874 8.176 20.7634 8.904C20.5581 9.61333 20.4554 10.3413 20.4554 11.088ZM38.2009 21V1.12H47.1609C48.0942 1.12 48.9529 1.316 49.7369 1.708C50.5395 2.08133 51.2302 2.59467 51.8089 3.248C52.3875 3.88267 52.8355 4.60133 53.1529 5.404C53.4889 6.20667 53.6569 7.01867 53.6569 7.84C53.6569 8.66133 53.5262 9.44533 53.2649 10.192C53.0035 10.92 52.6302 11.5827 52.1449 12.18C51.6595 12.7587 51.0809 13.2347 50.4089 13.608L54.7769 21H49.7089L45.9009 14.588H42.7929V21H38.2009ZM42.7929 10.584H46.9929C47.3662 10.584 47.6929 10.472 47.9729 10.248C48.2715 10.0053 48.5142 9.67867 48.7009 9.268C48.8875 8.85733 48.9809 8.38133 48.9809 7.84C48.9809 7.29867 48.8689 6.832 48.6449 6.44C48.4395 6.02933 48.1782 5.712 47.8609 5.488C47.5435 5.264 47.2075 5.152 46.8529 5.152H42.7929V10.584ZM70.9307 16.968V21H56.9587V1.12H70.6787V5.152H61.5507V9.016H69.3907V12.74H61.5507V16.968H70.9307ZM89.4004 21V9.156L85.1164 17.78H82.5964L78.3124 9.156V21H73.7204V1.12H78.7044L83.8564 11.508L89.0364 1.12H93.9924V21H89.4004ZM97.8103 21V1.12H102.402V21H97.8103ZM106.205 21V1.12H114.689C115.641 1.12 116.509 1.316 117.293 1.708C118.095 2.08133 118.786 2.59467 119.365 3.248C119.943 3.88267 120.391 4.60133 120.709 5.404C121.026 6.20667 121.185 7.028 121.185 7.868C121.185 9.00667 120.914 10.0893 120.373 11.116C119.85 12.1427 119.113 12.9827 118.161 13.636C117.227 14.2707 116.117 14.588 114.829 14.588H110.797V21H106.205ZM110.797 10.584H114.549C114.903 10.584 115.23 10.4813 115.529 10.276C115.827 10.0707 116.07 9.76267 116.257 9.352C116.443 8.94133 116.537 8.43733 116.537 7.84C116.537 7.224 116.425 6.72 116.201 6.328C115.995 5.91733 115.725 5.61867 115.389 5.432C115.071 5.24533 114.735 5.152 114.381 5.152H110.797V10.584ZM135.578 6.944C135.522 6.85067 135.326 6.71067 134.99 6.524C134.654 6.31867 134.234 6.104 133.73 5.88C133.226 5.656 132.675 5.46 132.078 5.292C131.481 5.124 130.883 5.04 130.286 5.04C129.502 5.04 128.895 5.18 128.466 5.46C128.037 5.72133 127.822 6.132 127.822 6.692C127.822 7.14 127.981 7.49467 128.298 7.756C128.634 8.01733 129.11 8.25067 129.726 8.456C130.342 8.64267 131.098 8.86667 131.994 9.128C133.263 9.464 134.365 9.87467 135.298 10.36C136.231 10.8267 136.941 11.4333 137.426 12.18C137.93 12.9267 138.182 13.916 138.182 15.148C138.182 16.268 137.977 17.22 137.566 18.004C137.155 18.7693 136.595 19.3947 135.886 19.88C135.195 20.3467 134.402 20.692 133.506 20.916C132.61 21.1213 131.686 21.224 130.734 21.224C129.763 21.224 128.765 21.1307 127.738 20.944C126.73 20.7387 125.759 20.4587 124.826 20.104C123.893 19.7307 123.034 19.2827 122.25 18.76L124.266 14.756C124.341 14.8493 124.583 15.0267 124.994 15.288C125.405 15.5307 125.909 15.792 126.506 16.072C127.122 16.3333 127.803 16.5667 128.55 16.772C129.297 16.9773 130.053 17.08 130.818 17.08C131.639 17.08 132.246 16.9493 132.638 16.688C133.049 16.4267 133.254 16.0627 133.254 15.596C133.254 15.092 133.039 14.7 132.61 14.42C132.199 14.14 131.63 13.888 130.902 13.664C130.193 13.44 129.371 13.188 128.438 12.908C127.225 12.5347 126.217 12.1147 125.414 11.648C124.63 11.1813 124.042 10.612 123.65 9.94C123.277 9.268 123.09 8.428 123.09 7.42C123.09 6.02 123.417 4.844 124.07 3.892C124.742 2.92133 125.638 2.19333 126.758 1.708C127.878 1.204 129.101 0.951999 130.426 0.951999C131.359 0.951999 132.255 1.064 133.114 1.288C133.991 1.512 134.803 1.792 135.55 2.128C136.315 2.464 136.997 2.8 137.594 3.136L135.578 6.944ZM149.417 21.168C147.83 21.168 146.477 20.9067 145.357 20.384C144.237 19.8427 143.322 19.1147 142.613 18.2C141.922 17.2667 141.409 16.212 141.073 15.036C140.755 13.8413 140.597 12.5907 140.597 11.284V1.12H145.189V11.284C145.189 12.0307 145.263 12.7587 145.413 13.468C145.562 14.1587 145.805 14.7747 146.141 15.316C146.477 15.8573 146.906 16.2867 147.429 16.604C147.97 16.9213 148.633 17.08 149.417 17.08C150.219 17.08 150.891 16.9213 151.433 16.604C151.974 16.268 152.403 15.8293 152.721 15.288C153.038 14.728 153.271 14.1027 153.421 13.412C153.57 12.7213 153.645 12.012 153.645 11.284V1.12H158.237V11.284C158.237 12.6653 158.059 13.9533 157.705 15.148C157.369 16.3427 156.846 17.3973 156.137 18.312C155.427 19.208 154.513 19.908 153.393 20.412C152.291 20.916 150.966 21.168 149.417 21.168ZM177.475 21V9.156L173.191 17.78H170.671L166.387 9.156V21H161.795V1.12H166.779L171.931 11.508L177.111 1.12H182.067V21H177.475ZM185.492 21V16.436H189.16V21H185.492Z" fill="currentColor" />
+                                <path d="M197.176 9.632V21H192.584V1.12H196.224L205.436 12.824V1.12H210.028V21H206.276L197.176 9.632ZM227.802 16.968V21H213.83V1.12H227.55V5.152H218.422V9.016H226.262V12.74H218.422V16.968H227.802ZM245.74 5.152H239.692V21H235.1V5.152H229.024V1.12H245.74V5.152Z" fill="#42A9ED" />
+                            </svg>
+
+                        </span>
+
+                    </a>
+
+                    <nav class="header__navigation">
+                        <ul class="header__items">
+
+                            <li class="header__item" data-menu-nav-el data-index="1">
+
+                                <a href="javascript:void(0);" class="header__link header__link--active text-small">
+                                    Бизнес
+                                </a>
+
+                            </li>
+
+                            <li class="header__item" data-menu-nav-el data-index="2">
+
+                                <a href="javascript:void(0);" class="header__link  text-small">
+                                    О нас
+                                </a>
+
+                            </li>
+
+                            <li class="header__item" data-menu-nav-el data-index="3">
+
+                                <a href="javascript:void(0);" class="header__link  text-small">
+                                    Цены
+                                </a>
+
+                            </li>
+
+                            <li class="header__item" data-menu-nav-el data-index="4">
+
+                                <a href="javascript:void(0);" class="header__link  text-small">
+                                    Оформить заказ
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <button type="button" data-menu-burger class="header__toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="menu" data-menu>
+            <div class="menu__container" data-menu-container>
+                <div class="menu__content">
+                    <ul class="menu__list" data-content>
+
+                        <li class="menu__item" data-link>
+
+                            <a href="!#" class="menu__link ">Бизнес</a>
+
+                        </li>
+
+                        <li class="menu__item" data-link>
+
+                            <a href="!#" class="menu__link ">О нас</a>
+
+                        </li>
+
+                        <li class="menu__item" data-link>
+
+                            <a href="!#" class="menu__link ">Цены</a>
+
+                        </li>
+
+                        <li class="menu__item" data-link>
+
+                            <a href="!#" class="menu__link ">Оформить заказ</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="menu__overlay" data-menu-hide></div>
+        </div>
+
+
+
+
+
+        <div class="hero ">
+            <div class="hero__container container" data-animate-sequence>
+                <div class="hero__wrap">
+
+                    <h1 class="hero__title h1" data-animate-sequence-el data-animate-sequence-delay="1">
+                        <span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipiscing</span>
+                    </h1>
+
+
+                    <div class="hero__block">
+
+                        <div class="hero__subtitle text-lead" data-animate-sequence-el data-animate-sequence-delay="1">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
+
+
+                        <ul class="list">
+
+                            <li class="list__li" data-animate-sequence-el data-animate-sequence-delay="1">Totam rem aperiam eaque ipsa</li>
+
+                            <li class="list__li" data-animate-sequence-el data-animate-sequence-delay="2">Sit voluptatem accusantium doloremque laudantium</li>
+
+                            <li class="list__li" data-animate-sequence-el data-animate-sequence-delay="3">Sed ut perspiciatis, unde omnis iste natus error</li>
+
+                        </ul>
+
+
+                        <div class="hero__actions" data-animate-sequence-el data-animate-sequence-delay="4">
+
+                            <div class="hero__action">
+
+
+                                <button type="button" class="button ">
+
+                                    <span class="button__text text-small">заказать</span>
+
+                                </button>
+
+
+
+
+                            </div>
+
+                            <div class="hero__action">
+
+
+                                <a href="javascript:void(0);" class="button button--white">
+
+                                    <span class="button__text text-small">подробнее</span>
+
+                                </a>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__background">
+
+                <picture class="image-adaptive">
+
+                    <source media="(max-width: 639px)" srcset="tmp/hero/hero-main/bg.jpg 1x">
+
+
+                    <img class="image" src="tmp/hero/hero-main/bg.jpg" alt="alt image">
+                </picture>
+
+
+            </div>
+
+        </div>
+
+        <div class="block-order">
+            <div class="block-order__container container" data-animate>
+
+                <div class="block-order__title h2" data-animate>
+                    Оформление <span>Заказа</span>
+                </div>
+
+
+
+                <div class="block-order__subtitle" data-animate>
+                    Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                </div>
+
+
+
+                <div class="block-order__benefit">
+                    <div class="block-benefit" data-animate-sequence>
+                        <div class="block-benefit__container container">
+
+                            <div class="block-benefit__cards" data-animate-sequence-el data-animate-sequence-delay="2">
+
+                                <div class="block-benefit__card">
+                                    <div class="card-benefit">
+
+                                        <div class="card-benefit__icon">
+                                            <span class="icon icon--55" aria-hidden="true">
+                                                <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M33.9286 25.1125C33.9286 30.0746 29.8906 34.1125 24.9286 34.1125C19.9665 34.1125 15.9286 30.0746 15.9286 25.1125C15.9286 20.1505 19.9665 16.1125 24.9286 16.1125C29.8906 16.1125 33.9286 20.1505 33.9286 25.1125ZM44.2143 41.8268C44.2143 41.1438 43.933 40.4808 43.471 40.0188L36.5803 33.1282C38.2076 30.7777 39.0714 27.9652 39.0714 25.1125C39.0714 17.2978 32.7433 10.9697 24.9286 10.9697C17.1138 10.9697 10.7857 17.2978 10.7857 25.1125C10.7857 32.9273 17.1138 39.2554 24.9286 39.2554C27.7812 39.2554 30.5937 38.3915 32.9442 36.7643L39.8348 43.6348C40.2969 44.117 40.9598 44.3982 41.6429 44.3982C43.0491 44.3982 44.2143 43.2331 44.2143 41.8268Z" fill="white" />
+                                                </svg>
+
+                                            </span>
+
+                                        </div>
+
+
+                                        <div class="card-benefit__text">
+                                            Lorem ipsum dolor sit amet
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="block-benefit__card">
+                                    <div class="card-benefit">
+
+                                        <div class="card-benefit__icon">
+                                            <span class="icon icon--55" aria-hidden="true">
+                                                <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M37.7857 35.9643C37.7857 37.3705 36.6205 38.5357 35.2143 38.5357C33.808 38.5357 32.6429 37.3705 32.6429 35.9643C32.6429 34.558 33.808 33.3928 35.2143 33.3928C36.6205 33.3928 37.7857 34.558 37.7857 35.9643ZM22.3571 20.5357C22.3571 21.9419 21.192 23.1071 19.7857 23.1071C18.3795 23.1071 17.2143 21.9419 17.2143 20.5357C17.2143 19.1294 18.3795 17.9643 19.7857 17.9643C21.192 17.9643 22.3571 19.1294 22.3571 20.5357ZM42.9286 35.9643C42.9286 31.7053 39.4732 28.25 35.2143 28.25C30.9554 28.25 27.5 31.7053 27.5 35.9643C27.5 40.2232 30.9554 43.6786 35.2143 43.6786C39.4732 43.6786 42.9286 40.2232 42.9286 35.9643ZM41 14.1071C41 13.404 40.4174 12.8214 39.7143 12.8214H36.5C36.0982 12.8214 35.7165 13.0223 35.4754 13.3437L14.2612 41.6294C14.1004 41.8504 14 42.1116 14 42.3928C14 43.096 14.5826 43.6786 15.2857 43.6786H18.5C18.9018 43.6786 19.2835 43.4777 19.5246 43.1562L40.7388 14.8705C40.8996 14.6495 41 14.3884 41 14.1071ZM27.5 20.5357C27.5 16.2768 24.0446 12.8214 19.7857 12.8214C15.5268 12.8214 12.0714 16.2768 12.0714 20.5357C12.0714 24.7946 15.5268 28.25 19.7857 28.25C24.0446 28.25 27.5 24.7946 27.5 20.5357Z" fill="currentColor" />
+                                                </svg>
+
+                                            </span>
+
+                                        </div>
+
+
+                                        <div class="card-benefit__text">
+                                            Lorem ipsum dolor sit amet
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="block-benefit__card">
+                                    <div class="card-benefit">
+
+                                        <div class="card-benefit__icon">
+                                            <span class="icon icon--55" aria-hidden="true">
+                                                <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.9932 29.3724V28.0867C23.9932 27.7251 24.2745 27.4439 24.6361 27.4439H38.7789C39.1405 27.4439 39.4218 27.7251 39.4218 28.0867V29.3724C39.4218 29.734 39.1405 30.0153 38.7789 30.0153H24.6361C24.2745 30.0153 23.9932 29.734 23.9932 29.3724Z" fill="currentColor" />
+                                                    <path d="M24.6361 32.5867H38.7789C39.1405 32.5867 39.4218 32.868 39.4218 33.2296V34.5153C39.4218 34.8769 39.1405 35.1581 38.7789 35.1581H24.6361C24.2745 35.1581 23.9932 34.8769 23.9932 34.5153V33.2296C23.9932 32.868 24.2745 32.5867 24.6361 32.5867Z" fill="currentColor" />
+                                                    <path d="M24.6361 37.7296H38.7789C39.1405 37.7296 39.4218 38.0108 39.4218 38.3724V39.6581C39.4218 40.0198 39.1405 40.301 38.7789 40.301H24.6361C24.2745 40.301 23.9932 40.0198 23.9932 39.6581V38.3724C23.9932 38.0108 24.2745 37.7296 24.6361 37.7296Z" fill="currentColor" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2789 21.3148C12.1837 21.3148 8.86392 17.995 8.86392 13.8998C8.86392 9.80461 12.1837 6.4848 16.2789 6.4848C19.7229 6.4848 22.6185 8.83277 23.4523 12.0153H36.2075C37.2722 12.0153 38.7588 12.6381 39.5021 13.3814L45.77 19.6492C46.5133 20.3925 47.1361 21.8791 47.1361 22.9439V46.0867C47.1361 47.1515 46.2722 48.0153 45.2075 48.0153H18.2075C17.1428 48.0153 16.2789 47.1515 16.2789 46.0867L16.2789 21.3148ZM18.8504 20.8568C21.4729 19.8871 23.397 17.477 23.6625 14.5867H34.2789V22.9439C34.2789 24.0086 35.1428 24.8724 36.2075 24.8724H44.5646V45.4439H18.8504V20.8568ZM37.674 15.1894C37.5334 15.0488 37.1919 14.868 36.8504 14.7474V22.301H44.4039C44.2834 21.9595 44.1026 21.618 43.962 21.4773L37.674 15.1894ZM17.2789 14.8998H21.2789V12.8998H17.2789V8.89984H15.2789V12.8998H11.2789V14.8998H15.2789V18.8998H17.2789V14.8998Z" fill="currentColor" />
+                                                </svg>
+
+                                            </span>
+
+                                        </div>
+
+
+                                        <div class="card-benefit__text">
+                                            Lorem ipsum dolor sit amet
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="block-benefit__card">
+                                    <div class="card-benefit">
+
+                                        <div class="card-benefit__icon">
+                                            <span class="icon icon--55" aria-hidden="true">
+                                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M44.7952 39.1071C44.7952 39.4487 44.4938 39.75 44.1523 39.75H14.5809C14.2393 39.75 13.938 39.4487 13.938 39.1071V23.6786C14.3599 24.1607 14.8219 24.6027 15.3242 25.0045C18.1969 27.2143 21.0898 29.4643 23.8822 31.7946C25.3889 33.0603 27.2572 34.6071 29.3465 34.6071H29.3666H29.3867C31.476 34.6071 33.3443 33.0603 34.851 31.7946C37.6434 29.4643 40.5362 27.2143 43.409 25.0045C43.9112 24.6027 44.3733 24.1607 44.7952 23.6786V39.1071ZM44.7952 17.9933C44.7952 19.7009 43.1478 21.9308 41.842 22.9553C39.1501 25.0647 36.4581 27.1942 33.7862 29.3237C32.7215 30.1875 30.7929 32.0357 29.3867 32.0357H29.3666H29.3465C27.9402 32.0357 26.0117 30.1875 24.9469 29.3237C22.2751 27.1942 19.5831 25.0647 16.8911 22.9553C15.0831 21.529 13.938 19.5402 13.938 17.25C13.938 16.9085 14.2393 16.6071 14.5809 16.6071H44.1523C44.9157 16.6071 44.7952 17.4911 44.7952 17.9933ZM47.3666 17.25C47.3666 15.4821 45.9202 14.0357 44.1523 14.0357H14.5809C12.813 14.0357 11.3666 15.4821 11.3666 17.25V39.1071C11.3666 40.875 12.813 42.3214 14.5809 42.3214H44.1523C45.9202 42.3214 47.3666 40.875 47.3666 39.1071V17.25Z" fill="currentColor" />
+                                                </svg>
+
+                                            </span>
+
+                                        </div>
+
+
+                                        <div class="card-benefit__text">
+                                            Lorem ipsum dolor sit amet
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="block-benefit__card">
+                                    <div class="card-benefit">
+
+                                        <div class="card-benefit__icon">
+                                            <span class="icon icon--55" aria-hidden="true">
+                                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24.7287 32.5357V30.6071H27.3002V24.8214H27.26C26.9386 25.3237 26.6372 25.5446 26.1551 25.9665L24.6082 24.3594L27.5814 21.6071H29.8716V30.6071H32.443V32.5357H24.7287ZM35.0145 27.3928C35.0145 23.7366 32.8046 19.0357 28.5859 19.0357C24.3671 19.0357 22.1573 23.7366 22.1573 27.3928C22.1573 31.0491 24.3671 35.75 28.5859 35.75C32.8046 35.75 35.0145 31.0491 35.0145 27.3928ZM45.3002 32.5357C42.4676 32.5357 40.1573 34.846 40.1573 37.6786H17.0145C17.0145 34.846 14.7042 32.5357 11.8716 32.5357V22.25C14.7042 22.25 17.0145 19.9397 17.0145 17.1071H40.1573C40.1573 19.9397 42.4676 22.25 45.3002 22.25V32.5357ZM47.8716 15.8214C47.8716 15.1183 47.289 14.5357 46.5859 14.5357H10.5859C9.88276 14.5357 9.30017 15.1183 9.30017 15.8214V38.9643C9.30017 39.6674 9.88276 40.25 10.5859 40.25H46.5859C47.289 40.25 47.8716 39.6674 47.8716 38.9643V15.8214Z" fill="white" />
+                                                </svg>
+
+                                            </span>
+
+                                        </div>
+
+
+                                        <div class="card-benefit__text">
+                                            Lorem ipsum dolor sit amet
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <form id="form-1" name="form-1" action="/ajax/call/?repo=test.frontend&status=success" method="POST" class="form  " data-ajax-form data-parsley-validate data-animate-sequence>
+
+                    <div class="form__container">
+
+                        <div class="form__content" data-filetextres>
+                            <div class="form__fields" data-animate-sequence-el data-animate-sequence-delay="3">
+
+                                <div class="form__field">
+                                    <div class="field">
+
+                                        <div class="field__control">
+
+                                            <div class="select-shell">
+                                                <select id="select-2" class="select
+				
+				" name="select-2" data-select data-select-size="default" data-select-theme="" data-select-placeholder="Выберите тип системы" data-attr>
+
+                                                    <option label="Выберите тип системы" data-placeholder></option>
+
+
+                                                    <option value="value-1">
+                                                        Sed ut perspiciatis
+                                                    </option>
+
+                                                    <option value="value-2">
+                                                        Nemo enim ipsam
+                                                    </option>
+
+                                                    <option value="value-3">
+                                                        Et harum quidem
+                                                    </option>
+
+                                                    <option value="value-4">
+                                                        Temporibus autem
+                                                    </option>
+
+                                                    <option value="value-5">
+                                                        Itaque earum rerum
+                                                    </option>
+
+                                                </select>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form__field">
+                                    <div class="field field--required">
+
+                                        <div class="field__control">
+
+                                            <div class="input-shell ">
+                                                <input id="form-1-input-1" type="email" class="input" placeholder="Ваш e-mail" name="form-1-input-1" autocomplete="off" required data-parsley-pattern="/^([\w.*-]+@([\w-]+\.)+[\w-]{2,4})?$/">
+
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form__field">
+                                    <div class="field field--required">
+
+                                        <div class="field__control">
+
+                                            <div class="input-shell ">
+                                                <input id="form-1-input-2" type="text" class="input" placeholder="Ваше имя" name="form-1-input-2" autocomplete="off" required>
+
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="form__bottom" data-animate-sequence-el data-animate-sequence-delay="4">
+
+                                <div class="form__slider">
+                                    <div class="slider">
+                                        <input type="hidden" name=send-result-polzunok id=send-result-polzunok />
+                                        <b class="slider__box h3">Sed ut perspiciatis, unde omnis iste natus <span data-slider-res class="slider__res"></span></b>
+                                        <div data-slider class="slider__slider"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form__file">
+                                    <div class="field field--theme-white">
+
+                                        <div class="field__control">
+
+                                            <div class="input-shell input-shell--white  input-shell--file" data-upload-parent>
+                                                <input id="file" type="file" class="input input--file input--white" name="file" accept=".doc,.docx,.txt,.pdf" data-upload-file>
+
+
+                                                <div class="form__upload-file" data-upload-label>
+                                                    <label for="file" class="label button button--white" data-aria-value="удалить загруженные данные">
+                                                        <span class="form__text-upload">
+                                                            Прикрепить файл
+                                                        </span>
+                                                        <span class="form__icon-upload">
+                                                            <span class="icon icon--20" aria-hidden="true">
+                                                                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M16.8125 4.60899L13.3304 1.12685C12.9174 0.713902 12.0915 0.36792 11.5 0.36792H1.50002C0.9085 0.36792 0.428589 0.847831 0.428589 1.43935V19.2965C0.428589 19.888 0.9085 20.3679 1.50002 20.3679H16.5C17.0915 20.3679 17.5714 19.888 17.5714 19.2965V6.43935C17.5714 5.84783 17.2255 5.02194 16.8125 4.60899ZM11.8572 1.88578C12.0469 1.95274 12.2366 2.05319 12.3148 2.13131L15.8081 5.62462C15.8862 5.70274 15.9866 5.89247 16.0536 6.08221H11.8572V1.88578ZM16.1429 18.9394H1.85716V1.79649H10.4286V6.43935C10.4286 7.03087 10.9085 7.51078 11.5 7.51078H16.1429V18.9394ZM4.7143 9.29649V10.0108C4.7143 10.2117 4.87055 10.3679 5.07145 10.3679H12.9286C13.1295 10.3679 13.2857 10.2117 13.2857 10.0108V9.29649C13.2857 9.0956 13.1295 8.93935 12.9286 8.93935H5.07145C4.87055 8.93935 4.7143 9.0956 4.7143 9.29649ZM12.9286 11.7965H5.07145C4.87055 11.7965 4.7143 11.9527 4.7143 12.1536V12.8679C4.7143 13.0688 4.87055 13.2251 5.07145 13.2251H12.9286C13.1295 13.2251 13.2857 13.0688 13.2857 12.8679V12.1536C13.2857 11.9527 13.1295 11.7965 12.9286 11.7965ZM12.9286 14.6536H5.07145C4.87055 14.6536 4.7143 14.8099 4.7143 15.0108V15.7251C4.7143 15.926 4.87055 16.0822 5.07145 16.0822H12.9286C13.1295 16.0822 13.2857 15.926 13.2857 15.7251V15.0108C13.2857 14.8099 13.1295 14.6536 12.9286 14.6536Z" fill="currentColor" />
+                                                                </svg>
+
+                                                            </span>
+
+                                                        </span>
+                                                    </label>
+                                                    <p class="form__upload-text"></p>
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form__submit" data-animate-sequence-el data-animate-sequence-delay="5">
+
+
+                                <button type="submit" class="button  button--big" title="Отправить">
+
+                                    <span class="button__text text-small">Отправить</span>
+
+                                </button>
+
+
+
+
+                            </div>
+
+
+                            <div class="form__answer" data-form-answer></div>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <div class="block-order__background">
+
+                <picture class="image-adaptive">
+
+
+                    <source media="(max-width: 989px)" srcset="tmp/order/bg.png 1x">
+
+                    <img class="image" src="tmp/order/bg.png" alt="alt image">
+                </picture>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <footer class="footer">
+            <div class="footer__container container">
+
+                <div class="footer__copy">
+                    © 2018 «LOREMIPSUM.NET» Все права защищены.
+                </div>
+
+
+
+                <div class="footer__pay">
+
+                    <div class="footer__pay-item">
+
+                        <button type="button" class="link">
+
+
+
+
+                            <span class="icon icon--20" aria-hidden="true">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4_174)">
+                                        <g clip-path="url(#clip1_4_174)">
+                                            <path d="M16.9118 13.4559C16.9719 13.8435 16.845 14.0076 16.7167 14.0076C16.5885 14.0076 16.4028 13.85 16.1957 13.5373C15.9887 13.2245 15.9179 12.8769 16.0181 12.6986C16.0558 12.6368 16.1167 12.5915 16.1881 12.572C16.2595 12.5525 16.3359 12.5604 16.4015 12.5939C16.7421 12.718 16.8757 13.2233 16.9118 13.4559ZM15.0241 14.3061C15.4343 14.6408 15.5585 15.0389 15.3421 15.3193C15.2762 15.3977 15.1922 15.46 15.0968 15.5013C15.0014 15.5426 14.8974 15.5617 14.793 15.557C14.5642 15.5574 14.3425 15.4801 14.1665 15.3386C13.7951 15.0246 13.6856 14.5142 13.9287 14.2247C13.9824 14.1653 14.0494 14.1186 14.1247 14.0881C14.2 14.0577 14.2814 14.0443 14.3629 14.049C14.6077 14.0569 14.8418 14.1479 15.0241 14.3061ZM14.3402 17.5367C16.1022 17.5367 18.0139 18.1208 20.1313 19.9351C20.3424 20.1161 20.6243 19.8912 20.4399 19.6651C18.3599 17.1258 16.4322 16.6412 14.5178 16.2329C12.172 15.7315 10.9643 14.4535 10.1187 13.0514C9.95167 12.7723 9.87552 12.8214 9.86083 13.1806C9.84679 13.7131 9.88841 14.2456 9.98507 14.7701C9.89022 14.7701 9.79403 14.7701 9.69918 14.7701C8.49698 14.7701 7.32179 14.4252 6.3222 13.7792C5.3226 13.1331 4.54352 12.2148 4.08346 11.1404C3.6234 10.0661 3.50302 8.88385 3.73756 7.7433C3.9721 6.60275 4.55101 5.55509 5.40109 4.7328C6.25117 3.91051 7.33424 3.35053 8.51334 3.12366C9.69244 2.89679 10.9146 3.01322 12.0253 3.45824C13.136 3.90326 14.0853 4.65688 14.7532 5.62379C15.4211 6.5907 15.7776 7.72748 15.7776 8.89037C15.7782 9.11877 15.7653 9.347 15.7389 9.57397C15.0985 9.49597 14.4514 9.48427 13.8085 9.53908C13.5773 9.55846 13.6107 9.6683 13.7844 9.69285C15.7883 10.043 17.175 11.2435 17.4902 13.4339C17.4914 13.445 17.4961 13.4555 17.5037 13.4638C17.5114 13.4721 17.5215 13.478 17.5328 13.4804C17.544 13.4828 17.5558 13.4818 17.5664 13.4774C17.577 13.473 17.5859 13.4654 17.5918 13.4559C18.6342 11.7703 19.0706 9.79838 18.8329 7.84774C18.5952 5.89709 17.6968 4.07738 16.2778 2.67245C14.8588 1.26752 12.999 0.356356 10.9885 0.0810911C8.97799 -0.194174 6.92984 0.181935 5.1635 1.15075C3.39717 2.11957 2.01197 3.62662 1.22396 5.43683C0.435958 7.24704 0.289461 9.25863 0.807322 11.1578C1.32518 13.057 2.47828 14.737 4.08676 15.9358C5.69524 17.1346 7.66865 17.7848 9.69918 17.7849C11.0418 17.7887 12.379 17.5355 14.3402 17.5355V17.5367Z" fill="#3E9CDC" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4_174">
+                                            <rect width="20" height="20" fill="white" transform="translate(0.499939)" />
+                                        </clipPath>
+                                        <clipPath id="clip1_4_174">
+                                            <rect width="20" height="20" fill="white" transform="translate(0.499939)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+
+
+
+                            <span class="link__text">QIWI wallet</span>
+
+                        </button>
+
+
+
+
+                    </div>
+
+                    <div class="footer__pay-item">
+
+                        <button type="button" class="link">
+
+
+
+
+                            <span class="icon icon--20" aria-hidden="true">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.77983 9.9307C3.77983 8.94664 3.86303 8.32213 5.91811 6.80087C7.61949 5.54138 13.073 1.23743 13.073 1.23743V8.42209H17.2203V18.7627H5.07518C4.36275 18.7627 3.77963 18.1844 3.77963 17.4778L3.77983 9.93076V9.9307Z" fill="#3E9CDC" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.073 8.422V12.585L5.45212 17.7335L15.0874 14.6246V8.422H13.073Z" fill="black" fill-opacity="0.2" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5904 8.20685C10.0361 7.68023 10.687 7.49436 11.0443 7.79173C11.4017 8.08915 11.3303 8.75719 10.8846 9.2838C10.4392 9.81035 9.78811 9.99602 9.43072 9.69859C9.07333 9.40123 9.14497 8.73333 9.5904 8.20678V8.20685Z" fill="#231F20" />
+                                </svg>
+
+                            </span>
+
+
+
+                            <span class="link__text">Yandex Money</span>
+
+                        </button>
+
+
+
+
+                    </div>
+
+                    <div class="footer__pay-item">
+
+                        <button type="button" class="link">
+
+
+
+
+                            <span class="icon icon--20" aria-hidden="true">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4_184)">
+                                        <path d="M9.34077 0C10.751 0 12.0928 0.323103 13.2969 0.901077C13.4857 0.986269 13.6758 1.08823 13.864 1.19028L13.0384 1.92159L11.8007 0.646297L9.66802 2.51651L8.41214 1.17307L4.49048 4.65889L7.00126 7.39646L6.02108 8.24641L8.49822 10.984L7.51795 11.8336L11.0613 15.7274L13.1585 13.823L14.9826 15.8639C14.6211 16.136 14.2255 16.4086 13.796 16.6462C12.4886 17.3773 10.9747 17.8016 9.35814 17.8016C4.38691 17.8016 0.345546 13.8066 0.345546 8.89314C0.327991 4.01286 4.37007 0 9.34077 0ZM7.68931 8.34864L9.83937 6.44418L11.7662 8.56952L9.61567 10.4738L7.68931 8.34864ZM9.22053 12.0214L11.3531 10.1001L13.2969 12.2253L11.1467 14.1298L9.22053 12.0214ZM6.15942 4.72713L8.30886 2.82267L10.2352 4.948L8.08507 6.85238L6.15942 4.72713ZM10.0974 3.70661L11.6971 2.27842L13.1423 3.85978L11.5426 5.30484L10.0974 3.70661ZM12.9529 10.2528L14.5521 8.82456L15.9972 10.4224L14.3974 11.8516L12.9529 10.2528ZM14.3631 13.4668L15.9629 12.0382L17.4068 13.6195L15.8076 15.0644L14.3631 13.4668ZM15.0168 6.12107L16.0831 5.16879L17.0459 6.22339L15.9799 7.17531L15.0168 6.12107ZM13.6408 2.97548L14.7071 2.00651L15.6707 3.07753L14.6036 4.02972L13.6408 2.97548ZM16.3755 9.26693L17.4417 8.31474L18.422 9.36899L17.3389 10.3209L16.3755 9.26693ZM11.5768 6.90341L13.1766 5.47513L14.6211 7.05614L13.022 8.48469L11.5768 6.90341Z" fill="#3E9CDC" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4_184">
+                                            <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+
+
+
+                            <span class="link__text">Web Money</span>
+
+                        </button>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="footer__contacts">
+
+                    <a href=mailto:info@ipsum228.com class="footer__link">
+
+                        <span class="footer__link-icon">
+                            <span class="icon icon--20" aria-hidden="true">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.7503 14.8491C16.7503 14.9914 16.6248 15.117 16.4825 15.117H4.16106C4.01876 15.117 3.89321 14.9914 3.89321 14.8491V8.42057C4.06899 8.62146 4.26151 8.80561 4.47077 8.97302C5.66776 9.89378 6.87312 10.8313 8.03662 11.8023C8.66441 12.3296 9.44287 12.9741 10.3134 12.9741H10.3218H10.3301C11.2007 12.9741 11.9791 12.3296 12.6069 11.8023C13.7704 10.8313 14.9758 9.89378 16.1728 8.97302C16.382 8.80561 16.5746 8.62146 16.7503 8.42057V14.8491ZM16.7503 6.05171C16.7503 6.7632 16.064 7.69233 15.5199 8.11923C14.3982 8.99813 13.2766 9.88541 12.1633 10.7727C11.7197 11.1326 10.9161 11.9027 10.3301 11.9027H10.3218H10.3134C9.72747 11.9027 8.9239 11.1326 8.48026 10.7727C7.36698 9.88541 6.24533 8.99813 5.12367 8.11923C4.37033 7.52492 3.89321 6.69624 3.89321 5.742C3.89321 5.5997 4.01876 5.47414 4.16106 5.47414H16.4825C16.8006 5.47414 16.7503 5.84244 16.7503 6.05171ZM17.8218 5.742C17.8218 5.00539 17.2191 4.40271 16.4825 4.40271H4.16106C3.42446 4.40271 2.82178 5.00539 2.82178 5.742V14.8491C2.82178 15.5857 3.42446 16.1884 4.16106 16.1884H16.4825C17.2191 16.1884 17.8218 15.5857 17.8218 14.8491V5.742Z" fill="currentColor" />
+                                </svg>
+
+                            </span>
+
+                        </span>
+
+
+                        <div class="footer__link-text">
+                            info@ipsum228.com
+                        </div>
+                    </a>
+
+                    <a href=javascript:void(0) class="footer__link">
+
+                        <span class="footer__link-icon">
+                            <span class="icon icon--20" aria-hidden="true">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.1804 12.2863C15.1804 12.9366 15.0574 13.5079 14.8113 14.0001C14.5652 14.4923 14.2341 14.8995 13.8181 15.2218C13.3259 15.6085 12.7839 15.8839 12.1921 16.048C11.6062 16.212 10.8591 16.2941 9.95093 16.2941H4.71265V3.20715H9.33569C10.2966 3.20715 11.0232 3.24524 11.5154 3.32141C12.0134 3.39172 12.4792 3.54407 12.9128 3.77844C13.3816 4.0304 13.7302 4.36731 13.9587 4.78918C14.1931 5.21106 14.3103 5.69739 14.3103 6.24817C14.3103 6.88684 14.1492 7.4552 13.8269 7.95325C13.5105 8.45129 13.071 8.8175 12.5085 9.05188V9.12219C13.3171 9.29211 13.9646 9.64075 14.4509 10.1681C14.9373 10.6896 15.1804 11.3956 15.1804 12.2863ZM10.9705 6.90735C10.9705 6.69641 10.9148 6.47961 10.8035 6.25696C10.698 6.0343 10.531 5.87317 10.3025 5.77356C10.0857 5.67981 9.82788 5.63 9.52905 5.62415C9.23608 5.61243 8.79663 5.60657 8.21069 5.60657H7.98218V8.37512H8.39526C8.95776 8.37512 9.35034 8.36926 9.573 8.35754C9.80151 8.34583 10.0359 8.2843 10.2761 8.17297C10.5398 8.04993 10.7214 7.88 10.821 7.66321C10.9207 7.44641 10.9705 7.19446 10.9705 6.90735ZM11.7966 12.2247C11.7966 11.8204 11.7146 11.504 11.5505 11.2755C11.3865 11.047 11.1404 10.8741 10.8123 10.757C10.613 10.6808 10.3376 10.6398 9.98608 10.6339C9.64038 10.6222 9.17456 10.6163 8.58862 10.6163H7.98218V13.8947H8.15796C9.01343 13.8947 9.60522 13.8888 9.93335 13.8771C10.2615 13.8654 10.5955 13.7863 10.9353 13.6398C11.2341 13.5109 11.4509 13.3234 11.5857 13.0773C11.7263 12.8253 11.7966 12.5411 11.7966 12.2247Z" fill="currentColor" />
+                                </svg>
+
+                            </span>
+
+                        </span>
+
+
+                        <div class="footer__link-text">
+                            Мы вконтакте
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+
+
+        <script type="text/javascript" src="js/vendors~index.chunk.js?1658808919951" defer></script>
+        <script type="text/javascript" src="js/index.js?1658808919951" defer></script>
+        <script type="text/javascript" src="js/components.js?1658808919951" defer></script>
+    </body>
+
+</html>

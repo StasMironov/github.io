@@ -1,0 +1,104 @@
+/*!
+     * jQuery Mousewheel 3.1.13
+     *
+     * Copyright jQuery Foundation and other contributors
+     * Released under the MIT license
+     * http://jquery.org/license
+     */
+
+/*!
+   * Sizzle CSS Selector Engine v2.3.6
+   * https://sizzlejs.com/
+   *
+   * Copyright JS Foundation and other contributors
+   * Released under the MIT license
+   * https://js.foundation/
+   *
+   * Date: 2021-02-16
+   */
+
+/*!
+   * jQuery UI Keycode 1.12.1
+   * http://jqueryui.com
+   *
+   * Copyright jQuery Foundation and other contributors
+   * Released under the MIT license.
+   * http://jquery.org/license
+   */
+
+/*!
+   * jQuery UI Widget 1.12.1
+   * http://jqueryui.com
+   *
+   * Copyright jQuery Foundation and other contributors
+   * Released under the MIT license.
+   * http://jquery.org/license
+   */
+
+/*!
+ * CSSPlugin 3.5.1
+ * https://greensock.com
+ *
+ * Copyright 2008-2020, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+/*!
+ * GSAP 3.5.1
+ * https://greensock.com
+ *
+ * @license Copyright 2008-2020, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+/*!
+ * ScrollTrigger 3.5.1
+ * https://greensock.com
+ *
+ * @license Copyright 2008-2020, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+/*!
+ * Select2 4.1.0-rc.0
+ * https://select2.github.io
+ *
+ * Released under the MIT license
+ * https://github.com/select2/select2/blob/master/LICENSE.md
+ */
+
+/*!
+ * jQuery JavaScript Library v3.6.0
+ * https://jquery.com/
+ *
+ * Includes Sizzle.js
+ * https://sizzlejs.com/
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2021-03-02T17:08Z
+ */
+
+/*!
+ * perfect-scrollbar v1.5.3
+ * Copyright 2021 Hyunje Jun, MDBootstrap and Contributors
+ * Licensed under MIT
+ */
+
+/*! jQuery UI - v1.12.1 - 2017-05-13
+* http://jqueryui.com
+* Includes: widget.js, keycode.js, widgets/mouse.js, widgets/slider.js
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
+
+/**
+         * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
+         * Released under MIT license, http://github.com/requirejs/almond/LICENSE
+         */

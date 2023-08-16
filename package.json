@@ -46,6 +46,7 @@
 		"eslint-plugin-import": "^2.18.2",
 		"eslint-plugin-prettier": "^3.3.1",
 		"file-loader": "^4.0.0",
+		"gh-pages": "^4.0.0",
 		"glob": "^7.1.4",
 		"html-beautify-webpack-plugin": "^1.0.5",
 		"html-webpack-plugin": "^3.2.0",
@@ -82,9 +83,10 @@
 		"prettier": "prettier --write src/**/*.js",
 		"build:assets": "cross-env NODE_ENV=production TPL=none webpack --colors --progress",
 		"start:legacy": "cross-env NODE_ENV=development webpack-dev-server --colors --progress --hot --inline",
-		"stats": "cross-env NODE_ENV=production STATS=stats webpack --colors --progress"
+		"stats": "cross-env NODE_ENV=production STATS=stats webpack --colors --progress",
+		"deploy": "gh-pages -d ./dist"
 	},
 	"keywords": [],
-	"author": "Uplab Dev",
+	"author": "Stas",
 	"license": "ISC"
 }

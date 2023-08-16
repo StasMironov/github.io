@@ -1,0 +1,18 @@
+<div class="block-advantages{% if block.layout %} block-advantages--layout-{{block.layout}} {% endif %}" data-animate-sequence>
+    <div class="block-advantages__container container" data-animate-sequence>   
+        {% if block.title %}
+            <h2 class="block-advantages__title title-decoration" data-animate-sequence-el data-animate-sequence-delay="0.5">{{ block.title }}</h2>
+        {% endif %}
+        {% if block.items %}
+            <div class="block-advantages__items">
+                {% for item in block.items %}
+                    <div class="block-advantages__item" data-animate-sequence-el data-animate-sequence-delay="{{ loop.index }}">
+                        {% view '^card-advantages' with {
+                            card: item
+                        } %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>

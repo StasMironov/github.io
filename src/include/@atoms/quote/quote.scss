@@ -1,0 +1,16 @@
+.quote {
+    display: flex;
+
+    &__icon {
+        width: rem(45);
+        display: block;
+        margin-right: rem(29);
+        flex-shrink: 0;
+        color: $color-red;
+    }
+
+    &__text {
+        line-height: 1.2;
+        color: $color-red;
+    }
+}

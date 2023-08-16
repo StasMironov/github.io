@@ -1,0 +1,104 @@
+.card-advantages {
+    $root: &;
+
+    &__count {
+        font-size: rem(40);
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: rem(6);
+        color: $color-blue;
+
+        @include media-breakpoint-up(md) {
+            font-size: rem(50);
+            margin-bottom: rem(12);
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        background-color: $color-gray;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__image {
+        position: relative;
+        width: rem(109);
+        flex-shrink: 0;
+    }
+
+    &__box {
+        position: relative;
+        width: rem(173);
+        height: rem(146);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-right: rem(24);
+        padding-top: rem(6);
+        margin-bottom: rem(21);
+
+        @at-root .block-advantages__item {
+            &:nth-child(1) {
+                .card-advantages__box {
+                    width: rem(155);
+                }
+            }
+
+            &:nth-child(2) {
+                .card-advantages__box {
+                    width: rem(166);
+                    padding-right: 0;
+                    padding-top: rem(15);
+                }
+            }
+
+            &:nth-child(3) {
+                .card-advantages {
+                    &__box {
+                        padding-top: rem(9);
+                        padding-right: rem(32);
+                    }
+
+                    &__image {
+                        width: rem(80);
+                    }
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        text-align: center;
+        max-width: rem(205);
+        line-height: 1.2;
+        font-size: rem(16);
+
+        @include media-breakpoint-up(md) {
+            font-size: rem(20);
+            max-width: rem(265);
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// .card-advantages:nth-child(1) {
+//     .card-advantages__box {
+//         width: rem(155);
+//     }
+// }
+
+// @at-root .card-advantages:nth-child(2) {
+//     .card-advantages__box {
+//         width: rem(166);
+//         height: rem(146);
+//     }
+// }

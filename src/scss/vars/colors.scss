@@ -1,34 +1,18 @@
-$color-true-black: #000;
-$color-black: #10101D;
-$color-background: #10101D;
-
-$color-blue: #3E9CDC;
-$color-blue-2: #42A9ED;
-
+$color-black: #000;
+$color-background: #fff;
+$color-blue: #3865A7;
 $color-white: #fff;
-
-$color-purple: #286690;
-
-$color-dark: #000;
-
-$color-gray: #3D4050;
-$color-gray-2: #6F6D7B;
-$color-gray-3: #BBBBBB;
-$color-black-2: #2A2B30;
-$color-black-3: #272733;
+$color-dark: #2F2F2F;
+$color-red: #FE5F5F;
+$color-gray: #F1F2F2;
 
 
 $colors: (
 	"white": $color-white,
 	"black": $color-black,
-	"black-2": $color-black-2,
-	"black-3": $color-black-3,
-	"purple": $color-purple,
 	"dark": $color-dark,
 	"gray": $color-gray,
-	"gray-2": $color-gray-2,
-	"gray-3": $color-gray-3,
-	"blue-2": $color-blue-2
+	"red": $color-red
 );
 
 

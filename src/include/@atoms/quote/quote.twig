@@ -1,0 +1,14 @@
+<div class="quote">
+    {% if quote.icon %}
+        <span class="quote__icon">
+            {% view '@icon' with {
+                icon: quote.icon
+            } %}
+        </span>
+    {% endif %}
+    {% if quote.text %}
+        <p class="quote__text">
+            {{quote.text}}
+        </p>
+    {% endif %}
+</div>

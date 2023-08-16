@@ -1,8 +1,7 @@
 .header {
 	$root: &;
 	position: fixed;
-	background-color: rgba(16, 16, 29, 0.9);
-	box-shadow: 0 4px 4px rgba(0,0,0,0.15);
+	background-color: $color-white;
 	top: 0;
 	left: 0;
 	z-index: 200;
@@ -14,28 +13,28 @@
 		transform: translateY(-100%);
 	}
 
-	&.show-header {
-		background-color: $color-white;
+	&.in-progress {
+		box-shadow: 0 4px 4px rgba(0,0,0,0.15);
 	}
 
-	&__navigation {
-		color: $color-white;
+	&__adviser {
+		margin-left: auto;
 
 		@include media-breakpoint-down(md) {
 			display: none;
 		}
 	}
 
-	&__logo {
-		display: block;
-		width: rem(250);
-		margin-right: auto;
+	&__action {
+		margin-right: rem(27);
+	}
+
+	&__navigation {
 		color: $color-white;
 
-		@at-root body .in-progress & {
-			// color: $color-black;
-			color: $color-black;
-		}
+		@media screen and (max-width: 1025px) { 
+            display: none;
+        }
 	}
 
 	&__items {
@@ -45,10 +44,16 @@
 
 	&__content {
 		display: flex;
-		padding: rem(32) 0 rem(36);
+		align-items: center;
+		padding-right: rem(16);
+		padding-top: rem(35);
+		padding-bottom: rem(35);
+		overflow: hidden;
 
 		@include media-breakpoint-down(md) {
-			padding: rem(24) 0 rem(24);
+			padding-top: rem(24);
+			padding-bottom: rem(24);
+			padding-right: 0;
 		}
 	}
 
@@ -59,31 +64,28 @@
 	}
 
 	&__link {
+		font-weight: 600;
 		@include defaultTransition(color);
-		color: $color-white;
 
 		@at-root body .in-progress & {
-			// color: $color-black;
 			color: $color-black;
 
 			@include hover {
-				color: $color-blue;	
+				color: $color-red;	
 			}
 
 			&--active {
-				color: $color-blue;
+				color: $color-red;
 			}
 		}
 
 		&--active {
-			color: $color-blue;
+			color: $color-red;
 		}
 
 		@include hover {
-			color: $color-blue;	
+			color: $color-red;	
 		}
-
-	
 	}
 
 	&__toggle {
@@ -96,12 +98,12 @@
 		border: 0;
 		padding: 0;
 		background-color: transparent;
-		color: $color-white;
+		color: $color-dark;
 		cursor: pointer;
+		margin-left: auto;
 		
 
 		@at-root body .in-progress & {
-			// color: $color-black;
 			color: $color-black;
 		}
 		span {
@@ -110,7 +112,6 @@
 			width: 100%;
 			height: 2px;
 			background-color: currentColor;
-			//transition: all .3s;
 		}
 
 		span + span {
@@ -235,7 +236,6 @@
 
 	}
 
-	
 	// Animation
 	$animation-duration: 1s !default;
 	$animation-delay: .2s !default;

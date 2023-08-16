@@ -1,0 +1,33 @@
+.block-posts {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__items {
+        max-width: rem(1000);
+    }
+
+    &__item {
+        &:not(:last-child){
+            margin-bottom: rem(48);
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: rem(83);
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(40);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem(52);
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: rem(84);
+        }
+    }
+}

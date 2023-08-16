@@ -1,18 +1,26 @@
 <div class="menu" data-menu>
     <div class="menu__container" data-menu-container>
-        <div class="menu__content" >
+        <div class="menu__content" data-animate-sequence>
 				<ul class="menu__list" data-content>
 					{% for item in menu.navigation %}
 						<li class="menu__item" data-link {% if item.attr %}data-trigger {% endif %}>
 							{% if item.href %}
 								<a href="{{ item.href }}"
-								class="menu__link "{% if item.external %} target="_blank"{% endif %}>{{ item.text }}</a>
+								class="menu__link"{% if item.external %} target="_blank"{% endif %}>{{ item.text }}</a>
 							{% else %}
 								<span class="menu__link menu__link--active">{{ item.text }}</span>
 							{% endif %}
 						</li>
 					{% endfor %}
+					{% if menu.action %}
+					<div class="menu__action" data-animate-sequence-el data-animate-sequence-delay="3">
+						{% view '@button' with {
+							button: menu.action
+						} %}
+					</div>
+				{% endif %}
 				</ul>
+				
         </div>
     </div>
     <div class="menu__overlay" data-menu-hide></div>

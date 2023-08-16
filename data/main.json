@@ -1,214 +1,239 @@
 {
     "title": "Главная",
-    "header": {
-        "logo": {
-            "icon": {
-              "name": "logo",
-              "size": "fit"
-            },
-            "href": "javascript:void(0);"
-        },
-        "navigation": [
-            {
-                "href": "javascript:void(0);",
-                "text": "Бизнес",
-                "active": true
-            },
-            {
-                "href": "javascript:void(0);",
-                "text": "О нас"
-            },
-            {
-                "href": "javascript:void(0);",
-                "text": "Цены"
-            },
-            {
-                "href": "javascript:void(0);",
-                "text": "Оформить заказ"
-            }
-        ]
-    },
     "hero": {
         "background": {
-            "src": "tmp/hero/hero-main/bg.jpg",
-            "alt": "alt image",
-            "mob": {
-                "srcset": [
-                    {
-                        "src": "tmp/hero/hero-main/bg.jpg",
-                        "scale": "1"
-                    }
-                ]
-            }
+            "src": "tmp/hero/hero-main/bg.png",
+            "alt": "image alt",
+            "fill": true
         },
-        "title": "<span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipiscing</span>",
-        "subtitle": "At vero eos et accusamus et iusto odio dignissimos ducimus!",
-        "list": [
-           "Totam rem aperiam eaque ipsa",
-           "Sit voluptatem accusantium doloremque laudantium",
-           "Sed ut perspiciatis, unde omnis iste natus error"
-        ],
-        "actions": [
-            {
-                "text": "заказать"
-            },
-            {
-                "href": "javascript:void(0);",
-                "text": "подробнее",
-                "theme": "white"
-            }
-          ]
+		"title_hidden": "Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать свой бизнес",
+		"title": "Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать свой бизнес",
+		"img": {
+			"src": "tmp/hero/hero-main/logo.png",
+			"alt": "image alt"
+		}
     },
-    "block_order": {
-        "title": "Оформление  <span>Заказа</span>",
-        "subtitle": "Перед заполнением формы ознакомьтесь с нашей схемой работы!",
-        "background": {
-			"src": "tmp/order/bg.png",
-			"alt": "alt image",
-			"tab": {
-				"srcset": [
+    "block_info": {
+		"title": {
+			"text":"Для начала работы ответьте на вопрос, есть ли у вас уже существующий бизнес?",
+			"small": true
+		},
+		"actions": [
+			{
+				"href": "javascript:void(0);",
+				"text": "Да, у меня уже есть бизнес",
+				"theme": "theme-red",
+				"title": "Button",
+				"size": "size-big"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Нет, но планирую открыть",
+				"theme": "theme-blue",
+				"title": "Button",
+				"size": "size-big"
+			}
+		],
+		"decor": {
+			"direction": "bottom",
+			"background": "theme-gray"
+		}
+	},
+    "block_advantages": {
+		"title": "Преимущества",
+		"items": [
+			{
+				"count": "482",
+				"text": "Организаций поддержки по&nbsp;Российской Федерации",
+				"img": {
+                    "src": "tmp/cards/card-advantages/img1.png",
+                    "alt": "image alt"
+                },
+				"shape_name":"#shape-1",
+				"shape": {
+					"name": "shape/shape-1",
+					"size": "fit"
+				}
+			},
+			{
+				"count": "5240",
+				"text": "Оказано услуг государственной поддержки",
+				"img": {
+                    "src": "tmp/cards/card-advantages/img2.png",
+                    "alt": "image alt"
+                },
+				"shape_name":"#shape-2",
+				"shape": {
+					"name": "shape/shape-2",
+					"size": "fit"
+				}
+			},
+			{
+				"count": "1360",
+				"text": "Зарегестрировано участников проекта",
+				"img": {
+                    "src": "tmp/cards/card-advantages/img3.png",
+                    "alt": "image alt"
+                },
+				"shape_name":"#shape-3",
+				"shape": {
+					"name": "shape/shape-3",
+					"size": "fit"
+				}
+			}
+		]
+	},
+    "block_posts": {
+		"title": "Истории успеха",
+		"items": [
+			{
+				"title": "Пекарня “Русские традиции”",
+				"layout": "1",
+				"quote": {
+					"icon": {
+						"name": "patterns/quote/arrow",
+						"size": "fit"
+					},
+					"text": "Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива»."
+				},
+				"text": "Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие расчеты, учет рисков и перспектив, анализ рынка, налаживание сбыта.",
+				"action": {
+					"icon": {
+						"name": "16/arrow",
+						"size": "16"
+					},
+					"text": "Читать историю",
+					"title": "Button",
+					"theme": ["theme-line", "theme-blue"],
+					"size": "size-small"
+				},
+				"img": {
+                    "src": "tmp/cards/card-post/img1.jpg",
+                    "alt": "image alt",
+					"shape": "#shape-4_1"
+                },
+				"shapes": [
 					{
-						"src": "tmp/order/bg.png",
-						"scale": "1"
+						"short_name": "#shape-4",
+						"mask": {
+							"name": "shape/shape-4",
+							"size": "fit"
+						}
+					},
+					{
+						"mask": {
+							"name": "shape/shape-4_1",
+							"size": "fit"
+						}
+					}
+				]
+			},
+			{
+				"title": "Автомастерская",
+				"layout": "2",
+				"theme": "turn",
+				"quote": {
+					"icon": {
+						"name": "patterns/quote/arrow",
+						"size": "fit"
+					},
+					"text": "Первые дни независимости. Когда не нужно рано вставать, когда не нужно отпрашиваться, что бы успеть съездить в магазин, когда удобно."
+				},
+				"text": "Встреча в городе Н с моими будущими партнерами была плодотворной. Я не смог заснуть до пяти утра – не потому что не спалось, но потому что мысли о будущих перспективах просто взрывали мой мозг.",
+				"action": {
+					"icon": {
+						"name": "16/arrow",
+						"size": "16"
+					},
+					"text": "Читать историю",
+					"title": "Button",
+					"theme": ["theme-line", "theme-blue"],
+					"size": "size-small"
+				},
+				"img": {
+                    "src": "tmp/cards/card-post/img2.jpg",
+                    "alt": "image alt",
+					"shape": "#shape-5_1"
+                },
+				"shapes": [
+					{
+						"short_name": "#shape-5",
+						"mask": {
+							"name": "shape/shape-5",
+							"size": "fit"
+						}
+					},
+					{
+						"mask": {
+							"name": "shape/shape-5_1",
+							"size": "fit"
+						}
+					}
+				]
+			},
+			{
+				"title": "Салон красоты “Эмират”",
+				"layout": "3",
+				"quote": {
+					"icon": {
+						"name": "patterns/quote/arrow",
+						"size": "fit"
+					},
+					"text": "Когда же появилась возможность открыть свой бизнес, я рассматривала различные варианты, изучала всевозможные направления."
+				},
+				"action": {
+					"icon": {
+						"name": "16/arrow",
+						"size": "16"
+					},
+					"text": "Читать историю",
+					"title": "Button",
+					"theme": ["theme-line", "theme-blue"],
+					"size": "size-small"
+				},
+				"img": {
+                    "src": "tmp/cards/card-post/img3.jpg",
+                    "alt": "image alt",
+					"shape": "#shape-6"
+                },
+				"shapes": [
+					{
+						"short_name": "#shape-4",
+						"mask": {
+							"name": "shape/shape-4",
+							"size": "fit"
+						}
+					},
+					{
+						"mask": {
+							"name": "shape/shape-6",
+							"size": "fit"
+						}
 					}
 				]
 			}
+		]
+	},
+    "block_info2": {
+		"layout": "2",
+		"title": {
+			"text":"Есть вопросы?"
 		},
-        "block_benefit": {
-            "cards": [
-                {
-                    "icon": {
-                        "name": "55/search",
-                        "size": "55"
-                    },
-                    "text": "Lorem ipsum dolor sit amet"
-                },
-                {
-                    "icon": {
-                        "name": "55/percent",
-                        "size": "55"
-                    },
-                    "text": "Lorem ipsum dolor sit amet"
-                },
-                {
-                    "icon": {
-                        "name": "55/doc",
-                        "size": "55"
-                    },
-                    "text": "Lorem ipsum dolor sit amet"
-                },
-                {
-                    "icon": {
-                        "name": "55/mail",
-                        "size": "55"
-                    },
-                    "text": "Lorem ipsum dolor sit amet"
-                },
-                {
-                    "icon": {
-                        "name": "55/money",
-                        "size": "55"
-                    },
-                    "text": "Lorem ipsum dolor sit amet"
-                }
-            ]
-        },
-        "formOrder": {
-            "id": "form-1",
-            "name": "form-1",
-            "method": "POST",
-            "action": "/ajax/call/?repo=test.frontend&status=success",
-            "attr": "data-ajax-form",
-            "selects": [
-                {
-                  "select": true,
-                  "id": "select-2",
-                  "name": "select-2",
-                  "attr": "data-attr",
-                  "placeholder": "Выберите тип системы",
-                  "options": [
-                    {
-                      "value": "value-1",
-                      "text": "Sed ut perspiciatis"
-                    },
-                    {
-                      "value": "value-2",
-                      "text": "Nemo enim ipsam"
-                    },
-                    {
-                      "value": "value-3",
-                      "text": "Et harum quidem"
-                    },
-                    {
-                        "value": "value-4",
-                        "text": "Temporibus autem"
-                    },
-                    {
-                    "value": "value-5",
-                    "text": "Itaque earum rerum"
-                    }
-                  ]
-                }
-              ],
-            "fields": [
-                {
-                    "input": true,
-                    "id": "form-1-input-1",
-                    "name": "form-1-input-1",
-                    "required": true,
-                    "autocomplete": "off",
-                    "placeholder": "Ваш e-mail",
-                    "type": "email"
-                    
-                },
-                {
-                    "input": true,
-                    "id": "form-1-input-2",
-                    "name": "form-1-input-2",
-                    "autocomplete": "off",
-                    "placeholder": "Ваше имя",
-                    "required": true
-                
-                }
-            ],
-            "file": {
-                "input": true,
-                "theme": "white",
-                "name": "file",
-                "id": "file",
-                "type": "file",
-                "accept": ".doc,.docx,.txt,.pdf",
-                "placeholder": "",
-                "max_size": 2,
-                "filetext": "Файл не должен превышать 2Mb. или добавьте ссылку",
-                "typeErrorMessage": "Неверный тип файла",
-                "sizeMessage": "Файл превышает 2Mb, пожалуйста, загрузите другой файл",
-                "icon": {
-                  "name": "20/download",
-                  "size": "20"
-                },
-                "button_upload": {
-                  "text": "Прикрепить файл",
-                  "aria": "удалить загруженные данные",
-                  "theme": "white"
-                },
-                "text": "Файл в формате doc, pdf или txt"
-              },
-            "slider": {
-                "name": "send-result-polzunok",
-                "id":"send-result-polzunok",
-                "attr": "data-slider",
-                "label": "Sed ut perspiciatis, unde omnis iste natus"
-            },
-            "submit": {
-                "type": "submit",
-                "text": "Отправить",
-                "title": "Отправить",
-                "size": "big"
-            }
-        }
-    }
-    
-   
-    
+		"text": "Задайте интересующие вас вопросы онлайн помощнику",
+		"actions": [
+			{
+				"icon": {
+					"name": "14/icon-logo",
+					"size": "24"
+				},
+				"title": "Button",
+				"text": "Онлайн помощник",
+				"theme": ["theme-red", "theme-icon-bg"]
+			}
+		],
+		"decor": {
+			"direction": "top",
+			"background": "theme-gray"
+		}
+	}
 }

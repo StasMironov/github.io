@@ -1,0 +1,31 @@
+<div class="block-info{% if block.layout %} block-info--layout-{{block.layout}} {% endif %}" >
+    {% if block.decor %}
+        <div class="block-info__decor {% if block.decor.direction %}block-info__decor--{{block.decor.direction}}{% endif %} {% if block.decor.background %}block-info__decor--{{block.decor.background}}{% endif %}">
+        </div>
+    {% endif %}
+    <div class="block-info__container container" data-animate-sequence>   
+        <div class="block-info__content">
+            {% if block.title.text %}
+                <h3 class="block-info__title {% if block.title.small %} block-info__title--is-small{% endif %}" data-animate-sequence-el>
+                   {{block.title.text}}
+                </h3>
+            {% endif %}
+            {% if block.text %}
+                <p class="block-info__text" data-animate-sequence-el data-animate-sequence-delay="1">
+                   {{block.text}}
+                </p>
+            {% endif %}
+            {% if block.actions %}
+                <div class="block-info__actions">
+                    {% for action in block.actions %}
+                        <div class="block-info__action" data-animate-sequence-el data-animate-sequence-delay="{{ loop.index }}">
+                            {% view '@button' with {
+                                button: action
+                            } %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

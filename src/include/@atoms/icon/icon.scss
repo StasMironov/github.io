@@ -15,33 +15,46 @@
 		height: rem(16);
 	}
 
-	&--20 {
-		width: rem(20);
-		height: rem(20);
-	}
-
-	&--23 {
-		width: rem(23);
-		height: rem(23);
-	}
-
-	&--55 {
-		width: rem(55);
-		height: rem(55);
-	}
-
 	&--fit {
 		width: 100%;
 		height: 100%;
-	}
-
-	&--purple {
-		color: $color-purple;
 	}
 
 	svg {
 		display: block;
 		width: 100%;
 		height: 100%;
+
+		#shape-1 {
+			transform: scale(0.0064, 0.0075);
+		}
+
+		#shape-2 {
+			transform: scale(0.006, 0.0069);
+		}
+
+		#shape-3 {
+			transform: scale(0.0058, 0.007);
+		}
+
+		#shape-4 {
+			transform: scale(0.00352, 0.00402);
+		}
+
+		#shape-4_1 {
+			transform: scale(0.0048, 0.004902);
+		}
+
+		#shape-5 {
+			transform: scale(0.00364, 0.00325);
+		}
+
+		#shape-5_1 {
+			transform: scale(0.0048, 0.00402);
+		}
+
+		#shape-6 {
+			transform: scale(0.004, 0.0045);
+		}
 	}
 }

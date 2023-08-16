@@ -14,7 +14,8 @@
 		<div class="image is-lazy{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
 			 role="img"{% if image.attr %} {{ image.attr }}{% endif %}
 			 aria-label="{{ image.alt ?: image.caption ?: 'image' }}"
-			 data-bg="{{ image.src }}"></div>
+			 data-bg="{{ image.src }}"
+			 {% if image.shape %}style="clip-path: url({{image.shape}});"{% endif %}></div>
 	{% endif %}
 {% else %}
 	{% if image.disable_lazy %}
@@ -31,6 +32,8 @@
 		<img class="image is-lazy{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
 			 src="{{ placeholder?: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' }}"
 			 data-src="{{ image.src }}"{% if image.attr %} {{ image.attr }}{% endif %}{% if image.srcset %} data-srcset="{{ image.srcset }}"{% endif %}
-			 alt="{{ image.alt ?: image.caption ?: 'image' }}">
+			 alt="{{ image.alt ?: image.caption ?: 'image' }}"
+			 {% if image.shape %}style="clip-path: url({{image.shape}});"{% endif %}
+			 >
 	{% endif %}
 {% endif %}

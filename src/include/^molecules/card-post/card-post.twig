@@ -1,0 +1,46 @@
+<div class="card-post {% if card.layout %}card-post--layout-{{card.layout}}{% endif %} {% if card.theme %}card-post--is-{{card.theme}}{% endif %}" data-animate-sequence>
+    <div class="card-post__image">
+        <div class="card-post__decor" style="clip-path: url({{(card.shapes|first).short_name}});">
+        </div>
+        {% if card.img %}
+            <div class="card-post__img">
+                {% view '@image' with {
+                    image: card.img
+                } %}
+            </div>
+        {% endif %}
+        {% if card.shapes %}
+            {% for shape in card.shapes %}
+                {% view '@icon' with {
+                    icon: shape.mask
+                } %}
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="card-post__info">
+        {% if card.title %}
+            <h4 class="card-post__title" data-animate-sequence-el>
+                {{ card.title }}
+            </h4>
+        {% endif %}
+        {% if card.quote %}
+            <div class="card-post__quote" data-animate-sequence-el data-animate-sequence-delay="2">
+                {% view '@quote' with {
+                    quote: card.quote
+                } %}
+            </div>
+        {% endif %}
+        {% if card.text %}
+            <div class="card-post__text" data-animate-sequence-el data-animate-sequence-delay="3">
+                {{ card.text }}
+            </div>
+        {% endif %}
+        {% if card.action %}
+            <div class="card-post__action" data-animate-sequence-el data-animate-sequence-delay="4">
+                {% view '@button' with {
+                    button: card.action
+                } %}
+            </div>
+        {% endif %}
+    </div>
+</div>

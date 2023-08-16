@@ -1,6 +1,5 @@
 body {
-	background-color: $color-background;
-	//overflow: hidden;
+	background-color: $color-white;
 }
 
 .list {
@@ -34,3 +33,6 @@ body {
 	}
 }
 
+.visually-hidden {
+	@include visually-hidden;
+}

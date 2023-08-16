@@ -2,8 +2,49 @@
 
 {% block content %}
 
-	<div>
-	
+	<div class="py-64 bg-white">
+		<div class="container">
+			<p class="h2 mb-24"><code>&block_info</code></p>
+		</div>
+
+		<div class="pb-lg-56 pb-md-56 pb-40">
+			{% view '&block-info' with {
+				block: block_info
+			} %}
+		</div>
+
+		<div class="pb-lg-56 pb-md-56 pb-40">
+			{% view '&block-info' with {
+				block: block_info2
+			} %}
+		</div>
+
+		<div class="container">
+			<p class="h2 mb-24"><code>&block-advantages</code></p>
+			<div class="pb-lg-56 pb-md-56 pb-40">
+				{% view '&block-advantages' with {
+					block: block_advantages
+				} %}
+			</div>
+		</div>
+
+		<div class="container">
+			<p class="h2 mb-24"><code>&block-posts</code></p>
+			<div class="pb-lg-56 pb-md-56 pb-40">
+				{% view '&block-posts' with {
+					block: block_posts
+				} %}
+			</div>
+		</div>
+
+		<div>
+			<p class="h2 mb-24"><code>&hero</code></p>
+			<div class="pb-lg-56 pb-md-56 pb-40">
+				{% view '&hero' with {
+					hero: hero
+				} %}
+			</div>
+		</div>
 	</div>
 
 {% endblock %}

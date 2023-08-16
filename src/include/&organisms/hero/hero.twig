@@ -1,37 +1,27 @@
 <div class="hero {% if hero.theme %}hero--theme-{{hero.theme}}{% endif %}">
     <div class="hero__container container" data-animate-sequence>
         <div class="hero__wrap">
-            {% if hero.title %}
-                <h1 class="hero__title h1" data-animate-sequence-el data-animate-sequence-delay="1">
-                    {{hero.title}}
-                </h1>
+            {% if hero.img %}
+                <div class="hero__image" data-animate-sequence-el>
+                    {% if hero.img.tab or hero.img.mob %}
+                        {% view '@image-adaptive' with {
+                            image: hero.img
+                        } %}
+                    {% else %}
+                        {% view '@image' with {
+                            image: hero.img
+                        } %}
+                    {% endif %}
+                </div>
             {% endif %}
-
-            <div class="hero__block" >
-                {% if hero.subtitle %}
-                    <div class="hero__subtitle text-lead"  data-animate-sequence-el data-animate-sequence-delay="1"
-						 >{{hero.subtitle}}</div>
-                {% endif %}
-                {% if hero.list %}
-                    <ul class="list">
-                        {% for item in hero.list %}
-                            <li class="list__li" data-animate-sequence-el
-						 data-animate-sequence-delay="{{ loop.index }}">{{item}}</li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-                {% if hero.actions %}
-                    <div class="hero__actions" data-animate-sequence-el  data-animate-sequence-delay="4">
-                        {% for action in hero.actions %}
-                            <div class="hero__action">
-                                {% view '@button' with {
-									button: action
-								} %}
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-            </div>
+            {% if hero.title_hidden %}
+                <h1 class="visually-hidden">{{ hero.title_hidden }}</h1>
+            {% endif %}
+            {% if hero.title %}
+                <div class="hero__title" data-animate-sequence-el data-animate-sequence-delay="1">
+                    {{hero.title}}
+                </div>
+            {% endif %}
         </div>
     </div>
     {% if hero.background %}

@@ -3,18 +3,29 @@
     position: relative;
     height: auto;
     min-height: 100vh;
+    overflow: hidden;
+
+    &__image {
+        margin-bottom: rem(24);
+        width: rem(140);
+        height: auto;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem(65);
+            width: rem(208);
+        }
+    }
 
     &__container {
         display: flex;
         height: 100%;
-        padding-top: rem(203);
-        padding-bottom: rem(80);
+        padding-top: rem(100);
+        position: relative;
+        z-index: 1;
 
 
-        @include media-breakpoint-down(md) {
-            padding-top: rem(98);
-            padding-top: rem(150);
-            padding-bottom: rem(80);
+        @include media-breakpoint-up(md) {
+            padding-top: rem(137);
         }
     }
 
@@ -24,7 +35,18 @@
         top: 0;
         bottom: 0;
         width: 100%;
-        z-index: -1;
+        left: 0;
+        right: 0;
+
+        @include media-breakpoint-up(md) {
+            height: 114%;
+            width: 120%;
+            left: -10%;
+        }
+
+        @media screen and (orientation:landscape) and (max-width: 1023px) { 
+            filter: opacity(0.3);
+        }
     }
 
     &__wrap {
@@ -32,66 +54,26 @@
     }
 
     &__title {
-        text-transform: uppercase;
-        margin-bottom: rem(32);
+        max-width: rem(555);
+        line-height: 1.1;
+        font-size: rem(35);
+        font-weight: 600;
 
-
-        @include media-breakpoint-up(md) {
-            margin-bottom: rem(91);
+        @include media-breakpoint-down(lg) {
+            font-size: rem(35);
         }
-
-        @include media-breakpoint-down(sm) {
-            max-width: rem(300);
-        }
-
-        span {
-            color: $color-blue
-        }
-    }
-
-    &__actions {
-        display: flex;
-        align-items: center;
-
-        @include media-breakpoint-down(sm) {
-            flex-direction: column;
-        }
-
-        
-    }
-
-    &__action {
-        &:not(:last-child){
-            margin-right: rem(30);
-
-            @include media-breakpoint-down(sm) {
-                margin-right: 0;
-                margin-bottom: rem(8);
-            }
-        }
-
-        @include media-breakpoint-down(sm) {
-           width: 100%;
-        }
-
-        .button {
-            @include media-breakpoint-down(sm) {
-                width: 100%;
-            }
-        }
-    }
-
-
-    &__subtitle {
-        margin-bottom: rem(16);
-        
-    }
-
-    .list {
-        margin-bottom: rem(83);
 
         @include media-breakpoint-down(md) {
-            margin-bottom: 40px;
+            font-size: rem(40);
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(24);
+        }
+
+        @media screen and (orientation:landscape) and (min-width: 768px) and (max-width: 1024px)  {
+            font-size: rem(50);
+            max-width: rem(700);
         }
     }
 }

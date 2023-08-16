@@ -1,83 +1,155 @@
 .button {
 	$root: &;
-
 	position: relative;
 	display: inline-flex;
 	align-items: center;
 	height: rem(40);
-	min-width: rem(183);
-	padding: rem(15) rem(31) rem(15) rem(31);
-	background-color: $color-blue;
+	min-width: rem(170);
 	color: $color-white;
-	border: 1px solid $color-white;
 	cursor: pointer;
 	text-align: center;
 	white-space: nowrap;
-	@include defaultTransition(background-color);
-	border-radius: rem(4);
+	@include defaultTransition(background-color, color);
+	border-radius: rem(20);
+	background-color: transparent;
+	border: none;
+	justify-content: center;
 
-	&--big  {
-		min-width: rem(370);
-		height: rem(48);
-		font-size: rem(18);
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
 
-		@include media-breakpoint-down(sm) {
-			min-width: 100%;
+	&--size-big  {
+		height: rem(54);
+		border-radius: 32px;
+
+		@include media-breakpoint-up(md) {
+			min-width: rem(377);
+		}
+
+		#{$root}__text {
+			font-size: rem(22);
 		}
 	}
 
-	@include hover {
-		background-color: $color-white;
-		color: $color-black-2;
-		border-color: $color-gray-2;
+	&--size-small {
+		#{$root}__text {
+			font-size: rem(14);
+		}
 	}
 
-	&:active {
-		background-color: $color-white;
-		color: $color-black;
-		border-color: $color-gray-2;
+	&__icon {
+		@include defaultTransition(transform);
 	}
-
-
-	@include media-breakpoint-up(md) {
-		// height: rem(48);
-		// padding: 0 rem(20);
-	}
-
 
 	&__text {
 		position: relative;
-		display: block;
-		width: 100%;
+		display: flex;
+		width: auto;
 		line-height: 1;
 		font-weight: 500;
+		justify-content: center;
 
 		#{$root}--big & {
-			font-size: rem(15);
-    		font-weight: 600;
-
-			@include media-breakpoint-up(md) {
-				font-size: rem(15);
-			}
+			font-size: rem(22);
 		}
 	}
 
-
-	&--white {
-		background-color: $color-white;
-		color: $color-black-2;
-		border-color: $color-gray-2;
+	&--theme-red {
+		background-color: $color-red;
 
 		@include hover {
 			background-color: $color-blue;
-			color: $color-white;
-			border-color: $color-blue;
 		}
 	
 		&:active {
 			background-color: $color-blue;
+		}
+	}
+
+	&--theme-blue {
+		background-color: $color-blue;
+
+		@include hover {
+			background-color: $color-red;
+		}
+	
+		&:active {
+			background-color: $color-red;
+		}
+	}
+	
+	&--theme-icon {
+		border: none;
+		background-color: transparent;
+		color: $color-red;
+		padding: 0;
+
+		@include media-breakpoint-down(sm) {
+			width: auto;
+		}
+
+		#{$root}__text {
+			font-weight: 600;
+		}
+
+		#{$root}__icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-width: rem(38);
+			height: rem(38);	
+			border-radius: 50%;
+			background-color: $color-red;
+			margin-right: rem(15);
 			color: $color-white;
-			border-color: $color-blue;
+			@include defaultTransition(background-color);
+			padding-left: rem(3);
+		}
+
+		@include hover {
+			color: $color-blue;
+
+			#{$root}__icon {
+				background-color: $color-blue;
+			}
+		}
+	}
+
+	&--theme-icon-bg {
+		min-height: rem(44);
+		min-width: rem(263);
+		border-radius: rem(21);
+		padding-left: rem(8);
+
+		#{$root}__text {
+			font-size: rem(15);
+		}
+
+		#{$root}__icon {
+			margin-right: rem(8);
+			padding-bottom: rem(3);
+		}
+	}
+
+	&--theme-line {
+		display: flex;
+    	flex-direction: row-reverse;
+		padding-right: rem(23);
+		padding-left: rem(25);
+
+		#{$root}__icon {
+			padding-bottom: rem(2);
+		}
+
+		#{$root}__text {
+			margin-right: rem(8);
+		}
+
+		@include hover {
+			#{$root}__icon {
+				transform: translateX(rem(4));
+			}
 		}
 	}
 
@@ -85,14 +157,11 @@
 	&--disabled {
 		background-color: $color-white;
 		pointer-events: none;
-       // color: $color-opacity-dark;
 	}
-
 
 	&:disabled,
 	&.button--disabled {
 		background-color: $color-white;
 		pointer-events: none;
-		//color: $color-opacity-dark;
 	}
 }

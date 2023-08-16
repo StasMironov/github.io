@@ -1,0 +1,35 @@
+.block-advantages {
+    &__title {
+        position: relative;
+        text-transform: capitalize;
+        margin-bottom: rem(32);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem(52);
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: rem(94);
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-gap: rem(32) rem(16);
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: rem(80);
+        }
+    }
+}

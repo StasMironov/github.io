@@ -1,21 +1,82 @@
 {
 	"title": "Атомы",
-	"buttons": [
+	"buttonsThemeRed": [
 		{
-			"text": "заказать"
+			"href": "javascript:void(0);",
+			"text": "Личный кабинет",
+			"theme": "theme-red",
+			"title": "Button"
+		}
+	],
+	"buttonsThemeBlue": [
+		{
+			"href": "javascript:void(0);",
+			"text": "Личный кабинет",
+			"theme": "theme-blue",
+			"title": "Button"
+		}
+	],
+	"buttonsIcon": [
+		{
+			"icon": {
+				"name": "14/icon-logo",
+				"size": "24"
+			},
+			"title": "Button",
+			"text": "Онлайн помощник",
+			"theme": ["theme-icon"]
+		}
+	],
+	"buttonsSizeBigRed": [
+		{
+			"href": "javascript:void(0);",
+			"text": "Да, у меня уже есть бизнес",
+			"theme": "theme-red",
+			"title": "Button",
+			"size": "size-big"
+		}
+	],
+	"buttonsSizeBigBlue": [
+		{
+			"href": "javascript:void(0);",
+			"text": "Нет, но планирую открыть",
+			"theme": "theme-blue",
+			"title": "Button",
+			"size": "size-big"
+		}
+	],
+	"buttonsIconLine": [
+		{
+			"icon": {
+				"name": "16/arrow",
+				"size": "16"
+			},
+			"text": "Читать историю",
+			"title": "Button",
+			"theme": ["theme-line", "theme-blue"],
+			"size": "size-small"
+		}
+	],
+	"buttonsIconBg": [
+		{
+			"icon": {
+				"name": "14/icon-logo",
+				"size": "24"
+			},
+			"title": "Button",
+			"text": "Онлайн помощник",
+			"theme": ["theme-red", "theme-icon-bg"]
+		}
+	],
+	"links": [
+		{
+			"text": "Услуги  и поддержка",
+			"title": "link-title"
 		},
 		{
 			"href": "javascript:void(0);",
-			"text": "заказать"
-		},
-		{
-			"text": "подробнее",
-			"theme": "white"
-		},
-		{
-			"href": "javascript:void(0);",
-			"text": "подробнее",
-			"theme": "white"
+			"text": "Услуги  и поддержка",
+			"title": "link-title"
 		}
 	]
 }

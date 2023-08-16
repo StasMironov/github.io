@@ -1,84 +1,245 @@
 {
-	"title": "Организмы",
-	"sliderProduct": {
-		"slides": [
+	"block_info": {
+		"title": {
+			"text":"Для начала работы ответьте на вопрос, есть ли у вас уже существующий бизнес?",
+			"small": true
+		},
+		"actions": [
 			{
-				"label": "лазерные станки",
-				"discount":{
-					"text": "-15%"
+				"href": "javascript:void(0);",
+				"text": "Да, у меня уже есть бизнес",
+				"theme": "theme-red",
+				"title": "Button",
+				"size": "size-big"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Нет, но планирую открыть",
+				"theme": "theme-blue",
+				"title": "Button",
+				"size": "size-big"
+			}
+		],
+		"decor": {
+			"direction": "bottom",
+			"background": "theme-gray"
+		}
+	},
+	"block_info2": {
+		"layout": "2",
+		"title": {
+			"text":"Есть вопросы?"
+		},
+		"text": "Задайте интересующие вас вопросы онлайн помощнику",
+		"actions": [
+			{
+				"icon": {
+					"name": "14/icon-logo",
+					"size": "24"
 				},
-				"title": "CERTON HIGH&nbsp;SPEED",
-				"desc": "Лазерный станок CERTON 6090 High speed (130 Вт) осуществляет лазерную резку и гравировку неметаллических материалов, таких как пластик, фанера, дерево, оргстекло, акрил, кожа, ткань и т.п. ",
-				"image": {
-					"src": "tmp/sliders/slider-product/product1.png",
-					"alt": "alt image",
-					"tab": {
-						"srcset": [
-							{
-								"src": "tmp/sliders/slider-product/product1.png",
-								"scale": "1"
-							}
-						]
-					},
-					"mob": {
-						"srcset": [
-							{
-								"src": "tmp/sliders/slider-product/product1-mob.png",
-								"scale": "1"
-							}
-						]
-					}
-				},
-				"action": {
-					"href": "javascript:void(0);",
-					"text": "подробнее о товаре",
-					"title": "link-action",
-					"icon": {
-						"name": "12/arrow-right",
-						"size": "12"
-					}
+				"title": "Button",
+				"text": "Онлайн помощник",
+				"theme": ["theme-red", "theme-icon-bg"]
+			}
+		],
+		"decor": {
+			"direction": "top",
+			"background": "theme-gray"
+		}
+	},
+	"block_advantages": {
+		"title": "Преимущества",
+		"items": [
+			{
+				"count": "482",
+				"text": "Организаций поддержки по&nbsp;Российской Федерации",
+				"img": {
+                    "src": "tmp/cards/card-advantages/img1.png",
+                    "alt": "image alt"
+                },
+				"shape_name":"#shape-1",
+				"shape": {
+					"name": "shape/shape-1",
+					"size": "fit"
 				}
 			},
 			{
-				"label": "лазерные станки 2",
-				"title": "CERTON HIG ",
-				"desc": "Лазерный станок CERTON 6090 High speed (130 Вт)",
-				"image": {
-					"src": "tmp/sliders/slider-product/product1.png",
-					"alt": "alt image",
-					"tab": {
-						"srcset": [
-							{
-								"src": "tmp/sliders/slider-product/product1.png",
-								"scale": "1"
-							}
-						]
-					},
-					"mob": {
-						"srcset": [
-							{
-								"src": "tmp/sliders/slider-product/product1-mob.png",
-								"scale": "1"
-							}
-						]
-					}
-				},
-				"action": {
-					"href": "javascript:void(0);",
-					"text": "подробнее о товаре",
-					"title": "link-action",
-					"icon": {
-						"name": "12/arrow-right",
-						"size": "12"
-					}
+				"count": "5240",
+				"text": "Оказано услуг государственной поддержки",
+				"img": {
+                    "src": "tmp/cards/card-advantages/img2.png",
+                    "alt": "image alt"
+                },
+				"shape_name":"#shape-2",
+				"shape": {
+					"name": "shape/shape-2",
+					"size": "fit"
+				}
+			},
+			{
+				"count": "1360",
+				"text": "Зарегестрировано участников проекта",
+				"img": {
+                    "src": "tmp/cards/card-advantages/img3.png",
+                    "alt": "image alt"
+                },
+				"shape_name":"#shape-3",
+				"shape": {
+					"name": "shape/shape-3",
+					"size": "fit"
 				}
 			}
-		],
-		"action": {
-			"href": "javascript:void(0);",
-			"text": "Перейти в блог",
-			"title": "Перейти в блог"
+		]
+	},
+	"block_posts": {
+		"title": "Истории успеха",
+		"items": [
+			{
+				"title": "Пекарня “Русские традиции”",
+				"layout": "1",
+				"quote": {
+					"icon": {
+						"name": "patterns/quote/arrow",
+						"size": "fit"
+					},
+					"text": "Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива»."
+				},
+				"text": "Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие расчеты, учет рисков и перспектив, анализ рынка, налаживание сбыта.",
+				"action": {
+					"icon": {
+						"name": "16/arrow",
+						"size": "16"
+					},
+					"text": "Читать историю",
+					"title": "Button",
+					"theme": ["theme-line", "theme-blue"],
+					"size": "size-small"
+				},
+				"img": {
+                    "src": "tmp/cards/card-post/img1.jpg",
+                    "alt": "image alt",
+					"shape": "#shape-4_1"
+                },
+				"shapes": [
+					{
+						"short_name": "#shape-4",
+						"mask": {
+							"name": "shape/shape-4",
+							"size": "fit"
+						}
+					},
+					{
+						"mask": {
+							"name": "shape/shape-4_1",
+							"size": "fit"
+						}
+					}
+				]
+			},
+			{
+				"title": "Автомастерская",
+				"layout": "2",
+				"theme": "turn",
+				"quote": {
+					"icon": {
+						"name": "patterns/quote/arrow",
+						"size": "fit"
+					},
+					"text": "Первые дни независимости. Когда не нужно рано вставать, когда не нужно отпрашиваться, что бы успеть съездить в магазин, когда удобно."
+				},
+				"text": "Встреча в городе Н с моими будущими партнерами была плодотворной. Я не смог заснуть до пяти утра – не потому что не спалось, но потому что мысли о будущих перспективах просто взрывали мой мозг.",
+				"action": {
+					"icon": {
+						"name": "16/arrow",
+						"size": "16"
+					},
+					"text": "Читать историю",
+					"title": "Button",
+					"theme": ["theme-line", "theme-blue"],
+					"size": "size-small"
+				},
+				"img": {
+                    "src": "tmp/cards/card-post/img2.jpg",
+                    "alt": "image alt",
+					"shape": "#shape-5_1"
+                },
+				"shapes": [
+					{
+						"short_name": "#shape-5",
+						"mask": {
+							"name": "shape/shape-5",
+							"size": "fit"
+						}
+					},
+					{
+						"mask": {
+							"name": "shape/shape-5_1",
+							"size": "fit"
+						}
+					}
+				]
+			},
+			{
+				"title": "Салон красоты “Эмират”",
+				"layout": "3",
+				"quote": {
+					"icon": {
+						"name": "patterns/quote/arrow",
+						"size": "fit"
+					},
+					"text": "Когда же появилась возможность открыть свой бизнес, я рассматривала различные варианты, изучала всевозможные направления."
+				},
+				"action": {
+					"icon": {
+						"name": "16/arrow",
+						"size": "16"
+					},
+					"text": "Читать историю",
+					"title": "Button",
+					"theme": ["theme-line", "theme-blue"],
+					"size": "size-small"
+				},
+				"img": {
+                    "src": "tmp/cards/card-post/img3.jpg",
+                    "alt": "image alt",
+					"shape": "#shape-6"
+                },
+				"shapes": [
+					{
+						"short_name": "#shape-4",
+						"mask": {
+							"name": "shape/shape-4",
+							"size": "fit"
+						}
+					},
+					{
+						"mask": {
+							"name": "shape/shape-6",
+							"size": "fit"
+						}
+					}
+				]
+			}
+		]
+	},
+	"hero": {
+        "background": {
+			"src": "tmp/hero/hero-main/bg.png",
+			"alt": "alt image",
+			"tab": {
+				"srcset": [
+					{
+						"src": "tmp/hero/hero-main/bg.png",
+						"scale": "1"
+					}
+				]
+			}
+		},
+		"title_hidden": "Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать свой бизнес",
+		"title": "Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать свой бизнес",
+		"img": {
+			"src": "tmp/hero/hero-main/logo.png",
+			"alt": "image alt"
 		}
-		
-	}
+    }
 }

@@ -5,19 +5,19 @@
     padding: 0;
     display: flex;
     align-items: center;
-    font-size: rem(13);
-  
+    color: $color-white;
+    @include defaultTransition(color);
 
     &__text {
-        color: $color-white;
-        @include defaultTransition(color);
+        font-weight: bold;
     }
 
-
     @include hover {
-        #{$root}__text {
-            color: $color-blue;
-        }
+        color: $color-red;
+    }
+
+    &--theme-red {
+        color: $color-red;
     }
 
     .icon {

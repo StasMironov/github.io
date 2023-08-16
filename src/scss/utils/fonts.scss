@@ -21,15 +21,6 @@
 
 // Lato
 
-// @font-face {
-// 	font-family: 'Lato';
-// 	font-style: normal;
-// 	font-weight: 300;
-// 	font-display: swap;
-// 	src: url('../fonts/Lato/Lato-Light.woff2') format('woff2'),
-// 	url('../fonts/Latoo/Lato-Light.woff') format('woff');
-// }
-
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
@@ -58,4 +49,22 @@
 }
 
 
+//Circe 
 
+@font-face {
+	font-family: 'Circe';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('../fonts/Circe/Circe-Regular.woff2') format('woff2'),
+	url('../fonts/Circe/Circe-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Circe';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('../fonts/Circe/Circe-Bold.woff2') format('woff2')
+	url('../fonts/Circe/Circe-Bold.woff') format('woff');
+}

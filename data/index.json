@@ -14,10 +14,6 @@
 				"name": "Атомы"
 			},
 			{
-				"link": "molecules",
-				"name": "Молекулы"
-			},
-			{
 				"link": "organisms",
 				"name": "Организмы"
 			},

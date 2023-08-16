@@ -1,0 +1,25 @@
+{
+    "block": {
+		"title": "Для начала работы ответьте на вопрос",
+		"actions": [
+			{
+				"href": "javascript:void(0);",
+				"text": "Да, у меня уже есть бизнес",
+				"theme": "theme-red",
+				"title": "Button",
+				"size": "size-big"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Нет, но планирую открыть",
+				"theme": "theme-blue",
+				"title": "Button",
+				"size": "size-big"
+			}
+		],
+		"decor": {
+			"direction": "bottom",
+			"background": "theme-gray"
+		}
+	}
+}

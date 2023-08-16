@@ -1,97 +1,63 @@
 .footer {
-    background-color: $color-gray;
-    color: $color-white;
+    $self: &;
+    background-color: $color-dark;
 
-    &__contacts {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        padding-left: rem(40);
-
-        @include media-breakpoint-down(md) {
-            margin: 0 0 rem(8);
-            padding: 0;
-		}
+    &__container {
+        padding-bottom: rem(29);
+        padding-top: rem(29);
+        overflow: hidden;
     }
 
-    &__link {
+    &__items {
         display: flex;
-        align-items: center;
-        font-size: rem(13);
-        color: $color-white;
 
-        &-icon {
-            color: $color-blue;
-            margin-right: rem(12);
+        @include media-breakpoint-down(sm) {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-gap: rem(8);
         }
+    }
 
+    &__item {
         &:not(:last-child){
-            margin-right: rem(44);
+            margin-right: rem(51);
 
             @include media-breakpoint-down(md) {
                 margin-right: rem(16);
             }
         }
-
-        @include defaultTransition(color);
-
-		@include hover {
-			color: $color-blue;	
-		}
     }
 
-    &__copy {
-        color: $color-white;
-        font-size: rem(13);
-        padding-right: rem(40);
-    }
-
-    &__pay {
+    &__contacts {
         display: flex;
-        align-items: center;
-        padding: 0 rem(40);
-        border-left: 1px solid;
-        border-right: 1px solid;
-        flex: 1;
 
         @include media-breakpoint-down(sm) {
-            display: block;
+            justify-content: space-between;
         }
 
-        &-item {
+        #{$self}__item {
             &:not(:last-child){
-                margin-right: rem(40);
-
+                margin-right: rem(43);
+    
                 @include media-breakpoint-down(md) {
                     margin-right: rem(16);
                 }
-
-                @include media-breakpoint-down(sm) {
-                    margin: 0 0 rem(8);
-                }
             }
         }
-
-        @include media-breakpoint-down(md) {
-            margin: 0 0 rem(8);
-            padding: 0;
-            border: none;
-		}
     }
 
-    &__container {
+    &__wrapper {
         display: flex;
-        align-items: center;
-        padding-top: rem(28);
-        padding-bottom: rem(28);
-
-
+        justify-content: space-between;
+        
         @include media-breakpoint-down(md) {
-            flex-direction: column-reverse;
-            align-items: flex-start;
-		}
-      
+            flex-direction: column;
+        }
     }
 
-   
+    &__navigation {
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(16);
+        }
+    }
 }

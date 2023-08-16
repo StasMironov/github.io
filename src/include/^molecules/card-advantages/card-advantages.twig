@@ -1,0 +1,27 @@
+<div class="card-advantages">
+    <div class="card-advantages__container">
+        <div class="card-advantages__box">
+            
+        <div class="card-advantages__decor" style="clip-path: url({{card.shape_name}});">
+        </div>
+        {% if card.img %}
+            <div class="card-advantages__image">
+                {% view '@image' with {
+                    image: card.img
+                } %}
+            </div>
+        {% endif %}
+        {% if card.shape %}
+            {% view '@icon' with {
+                icon: card.shape
+            } %}
+        {% endif %}
+        </div>
+        {% if card.count %}
+            <div class="card-advantages__count">{{ card.count }}</div>
+        {% endif %}
+        {% if card.text %}
+            <div class="card-advantages__text">{{ card.text }}</div>
+        {% endif %}
+    </div>
+</div>

@@ -7,69 +7,81 @@
 		"md": 640,
 		"lg": 990
 	},
-  "placeholder": "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
-  "footer": {
-    "copy": "© 2018 «LOREMIPSUM.NET» Все права защищены.",
-    "contacts": [
-      {
-        "href": "mailto:info@ipsum228.com",
-        "text": "info@ipsum228.com",
+  "header": {
+    "logo": {
         "icon": {
-            "name": "20/mail",
-            "size": "20"
-        }
-      },
-      {
-        "href": "javascript:void(0)",
-        "text": "Мы вконтакте",
+          "name": "logo",
+          "size": "fit"
+        },
+        "href": "javascript:void(0);"
+    },
+    "action": {
+        "text": "Личный кабинет",
+        "title": "Button",
+        "theme": ["theme-red"]
+    },
+    "action2": {
         "icon": {
-            "name": "20/vk",
-            "size": "20"
+            "name": "14/icon-logo",
+            "size": "24"
+        },
+        "title": "Button",
+        "text": "Онлайн помощник",
+        "theme": ["theme-icon"]
+    },
+    "navigation": [
+        {
+            "href": "javascript:void(0);",
+            "text": "Каталог услуг",
+            "theme": "is-red"
         }
-      }
-    ],
-    "pay": [
-      {
-        "text": "QIWI wallet",
-        "icon": {
-            "name": "20/qiwi",
-            "size": "20"
-        }
-      },
-      {
-        "text": "Yandex Money",
-        "icon": {
-            "name": "20/yandex",
-            "size": "20"
-        }
-      },
-      {
-        "text": "Web Money",
-        "icon": {
-            "name": "20/webmoney",
-            "size": "20"
-        }
-      }
     ]
+  },
+  "footer": {
+    "links":[
+        {
+            "href": "javascript:void(0);",
+            "text": "Услуги  и поддержка"
+        },
+        {
+            "href": "javascript:void(0);",
+            "text": "Сервисы для бизнеса"
+        },
+        {
+            "href": "javascript:void(0);",
+            "text": "Общая информация"
+        },
+        {
+            "href": "javascript:void(0);",
+            "text": "Защита бизнеса"
+        }
+    ],
+    "contacts": {
+        "tel": {
+            "href": "tel:8-800-200-74-30",
+            "text": "8-800-200-74-30"
+        },
+        "mail": {
+            "href": "mailto:service@in-line.ru",
+            "text": "service@in-line.ru"
+        }
+    }
   },
   "menu": {
     "navigation": [
       {
-        "text": "Бизнес",
-        "href": "!#"
-      },
-      {
-        "text": "О нас",
-        "href": "!#"
-      },
-      {
-        "text": "Цены",
-        "href": "!#"
-      },
-      {
-        "text": "Оформить заказ",
-        "href": "!#"
+        "href": "javascript:void(0);",
+        "text": "Каталог услуг"
       }
-    ]
+    ],
+    "action": {
+      "icon": {
+          "name": "14/icon-logo",
+          "size": "24"
+      },
+      "title": "Button",
+      "text": "Онлайн помощник",
+      "theme": ["theme-icon"]
+    }
   }
 }

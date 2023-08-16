@@ -1,43 +1,25 @@
 <footer class="footer">
 	<div class="footer__container container">
-        {% if footer.copy %}
-            <div class="footer__copy">
-                {{footer.copy}}
-            </div>
-        {% endif %}
-
-        {% if footer.pay %}
-            <div class="footer__pay">
-                {% for item in footer.pay %}
-                    <div class="footer__pay-item">
-                        {% view "@link" with {
-                            link: item
-                        }%}
+        <div class="footer__wrapper" data-animate-sequence>
+            <nav class="footer__navigation">
+                {% if footer.links %}
+                    <ul class="footer__items">
+                        {% for link in footer.links %}
+                            <li class="footer__item" data-animate-sequence-el data-animate-sequence-delay="{{ loop.index }}"><a class="footer__link link" href={{link.href}}>{{link.text}}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </nav>
+            {% if footer.contacts %}
+                <div class="footer__contacts">
+                    <div class="footer__item" data-animate-sequence-el data-animate-sequence-delay="5">
+                        <a class="footer__link link" href={{footer.contacts.mail.href}}>{{footer.contacts.mail.text}}</a></div>
+                    <div class="footer__item" data-animate-sequence-el data-animate-sequence-delay="6">
+                        <a class="footer__link link" href={{footer.contacts.tel.href}}>{{footer.contacts.tel.text}}</a>
                     </div>
-                {% endfor %}
-            </div>
-        {% endif %}
-
-
-        {% if footer.contacts %}
-            <div class="footer__contacts">
-                {% for link in footer.contacts %}
-                    <a href={{link.href}} class="footer__link">
-                        {% if link.icon %}
-                            <span class="footer__link-icon">
-                                {% view '@icon' with {
-                                    icon: link.icon
-                                } %}
-                            </span>
-                        {% endif %}
-
-                        <div class="footer__link-text">
-                            {{link.text}}
-                        </div>
-                    </a>
-                {% endfor %}
-            </div>
-        {% endif %}
+                    
+                </div>
+            {% endif %}
+        </div>
 	</div>
-	
 </footer>

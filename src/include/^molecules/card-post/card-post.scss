@@ -1,0 +1,181 @@
+.card-post {
+    $root: &;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) {
+        padding-right: rem(16); 
+    }
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+    }
+
+    &__image {
+        position: relative;
+        min-width: rem(286);
+        height: rem(220);
+
+        @include media-breakpoint-up(lg) {
+            height: rem(250);
+        }
+
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: auto;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__decor {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-gray;
+    }
+
+    &__title {
+        margin-bottom: rem(15);
+    }
+
+    &__quote {
+        margin-bottom: rem(21);
+    }
+
+    &__text {
+        line-height: 1.2;
+        margin-bottom: rem(16);
+    }
+
+    &--layout-2 {
+        #{$root}__image {
+            margin-right: 0;
+            height: rem(220);
+            min-width: rem(278);
+            padding: rem(50) rem(21) rem(7) rem(45);
+
+            @include media-breakpoint-up(lg) {
+                height: rem(307);
+            }
+
+            &::before {
+                width: rem(60);
+                height: rem(40);
+                background-image: $icon-decor-3;
+                right: rem(45);
+                top: rem(20);
+            }
+
+            &::after {
+                background-image: $icon-decor-4;
+                width: rem(33);
+                height: rem(40);
+                bottom: rem(4);
+                left: rem(11);            
+            }
+        }
+    }
+
+    &--is-turn {
+        flex-direction: row-reverse;
+    
+        @include media-breakpoint-up(lg) {
+            padding-right: rem(68);
+            padding-left: rem(16);
+        }
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        #{$root}__info {
+            @include media-breakpoint-up(lg) {
+                margin-right: rem(59);
+            }
+        }
+    }
+
+    &--layout-1 {
+        #{$root}__image {
+            padding: rem(36) rem(38) rem(10); 
+            
+            @include media-breakpoint-up(lg) {
+                margin-right: rem(120);
+            }
+
+            &::before {
+                width: rem(38);
+                height: rem(28);
+                background-image: $icon-decor;
+                background-repeat: no-repeat;
+                top: rem(-4);
+                right: rem(12);
+                left: 0;
+            }
+
+            &::after {
+                width: rem(40);
+                height: rem(60);
+                background-image: $icon-decor-2;
+                background-repeat: no-repeat;
+                top: rem(82);
+                right: rem(22);
+                left: auto;
+                bottom: 0;
+            }
+        }
+
+        #{$root}__info {
+            @include media-breakpoint-up(lg) {
+                padding-bottom: rem(21);
+            }
+        }
+    }
+
+    &--layout-3 {
+        #{$root}__image {
+            min-width: rem(313);
+            height: rem(230);
+            padding: rem(42) rem(24) rem(10) rem(31);
+            
+            @include media-breakpoint-up(lg) {
+                margin-right: rem(69);
+                height: rem(274);
+            }
+
+            &::before {
+                width: rem(51);
+                height: rem(38);
+                background-image: $icon-decor;
+                background-repeat: no-repeat;
+                top: rem(12);
+                left: rem(-8);
+                transform: rotate(-47deg);
+            }
+
+            &::after {
+                width: rem(42);
+                height: rem(60);
+                background-image: $icon-decor-2;
+                background-repeat: no-repeat;
+                top: rem(88);
+                right: rem(12);
+                left: auto;
+                bottom: 0;
+                transform: scale(-1) rotate(-20deg);
+            }
+        }
+    }
+}

@@ -5,15 +5,94 @@
 
 <!--<editor-fold desc="@link-action">-->
 
-		<div class="py-24 bg-white">
+		<div class="py-112 bg-white">
 			<div class="container">
 				<p class="h2 mb-24"><code>@button</code></p>
 
 				<div class="mb-24">
-					<p class="text-lead mb-16"><code>Button</code></p>
+					<p class="text-lead mb-16"><code>buttonsThemeRed</code></p>
 
 					<div style="display: flex; flex-wrap: wrap;">
-						{% for button in buttons %}
+						{% for button in buttonsThemeRed %}
+							<div class="py-8 px-8">
+								{% view '@button' with {
+									button: button
+								} %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<div class="mb-24">
+					<p class="text-lead mb-16"><code>buttonsThemeBlue</code></p>
+
+					<div style="display: flex; flex-wrap: wrap;">
+						{% for button in buttonsThemeBlue %}
+							<div class="py-8 px-8">
+								{% view '@button' with {
+									button: button
+								} %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+				
+				<div class="mb-24">
+					<p class="text-lead mb-16"><code>buttonsIcon</code></p>
+					<div style="display: flex; flex-wrap: wrap;">
+						{% for button in buttonsIcon %}
+							<div class="py-8 px-8">
+								{% view '@button' with {
+									button: button
+								} %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<div class="mb-24">
+					<p class="text-lead mb-16"><code>buttons Size:big Theme:red</code></p>
+					<div style="display: flex; flex-wrap: wrap;">
+						{% for button in buttonsSizeBigRed %}
+							<div class="py-8 px-8">
+								{% view '@button' with {
+									button: button
+								} %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<div class="mb-24">
+					<p class="text-lead mb-16"><code>buttons Size:big Theme:blue</code></p>
+					<div style="display: flex; flex-wrap: wrap;">
+						{% for button in buttonsSizeBigBlue %}
+							<div class="py-8 px-8">
+								{% view '@button' with {
+									button: button
+								} %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<div class="mb-24">
+					<p class="text-lead mb-16"><code>buttonsIconLine</code></p>
+					<div style="display: flex; flex-wrap: wrap;">
+						{% for button in buttonsIconLine %}
+							<div class="py-8 px-8">
+								{% view '@button' with {
+									button: button
+								} %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<div class="mb-24">
+					<p class="text-lead mb-16"><code>buttonsIconBg</code></p>
+					<div style="display: flex; flex-wrap: wrap;">
+						{% for button in buttonsIconBg %}
 							<div class="py-8 px-8">
 								{% view '@button' with {
 									button: button
@@ -25,6 +104,22 @@
 			</div>
 		</div>
 
+		<div class="py-24 bg-black">
+			<div class="container">
+				<p class="h2 mb-24"><code style="color: white">@link</code></p>
+				<div class="mb-24">
+					<p class="text-lead mb-16"><code style="color: white">Link white</code></p>
 
-
+					<div style="display: flex; flex-wrap: wrap;">
+						{% for link in links %}
+							<div class="py-8 px-8">
+								{% view '@link' with {
+									link: link
+								} %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
 {% endblock %}

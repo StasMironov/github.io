@@ -6,9 +6,28 @@
         hero: hero
     } %}
 
-    {% view '&block-order' with {
-        block: block_order
-    } %}
-	
+	<div class="pb-lg-128 pb-md-80 pb-40">
+        {% view '&block-info' with {
+            block: block_info
+        } %}
+    </div> 
+
+     <div class="pt-lg-32 pb-lg-128 pb-md-80 pb-40">
+        {% view '&block-advantages' with {
+            block: block_advantages
+        } %}
+    </div>
+
+    <div class="pb-lg-128 pb-md-56 pb-40 pt-lg-112">
+        {% view '&block-posts' with {
+            block: block_posts
+        } %}
+    </div>
+
+     <div class="pt-lg-96">
+        {% view '&block-info' with {
+            block: block_info2
+        } %}
+    </div>
 
 {% endblock %}

@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="ru" class="animate-disabled">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="format-detection" content="telephone=no">
+
+        <link href="css/vendors~index.chunk.css?1692166148480" rel="stylesheet">
+        <link href="css/index.css?1692166148480" rel="stylesheet">
+        <link href="css/components.css?1692166148480" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class="header" data-header>
+            <div class="header__container container">
+                <div class="header__content" data-animate-sequence>
+
+                    <div class="header__action" data-animate-sequence-el>
+
+
+                        <button type="button" class="button  button--theme-red" title="Button">
+
+
+                            <span class="button__text">Личный кабинет</span>
+
+                        </button>
+
+
+
+
+                    </div>
+
+                    <nav class="header__navigation">
+                        <ul class="header__items">
+
+                            <li class="header__item" data-animate-sequence-el data-animate-sequence-delay="1">
+
+                                <a href="javascript:void(0);" class="header__link ">
+                                    Каталог услуг
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <div class="header__adviser" data-animate-sequence-el data-animate-sequence-delay="2">
+
+
+                        <button type="button" class="button  button--theme-icon" title="Button">
+
+                            <span class="button__icon">
+                                <span class="icon icon--24" aria-hidden="true">
+                                    <svg fill="none" width="14" height="21" viewBox="0 0 14 21" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor" d="m4.213 17.152 1.758 3.28h.025l1.783-3.28-1.783-1.575-1.783 1.575Z" />
+                                        <path fill="currentColor" d="M5.996 1.58C5.605 1.753.67 4.043.67 7.702c0 3.125 2.906 7.876 2.906 7.876l2.419-2.119 2.418 2.119s2.907-4.73 2.907-7.876c-.025-3.66-4.959-5.949-5.325-6.12Zm1.587 10.444-1.587-1.39-1.588 1.39C4.335 11.832 3.26 9.307 3.26 7.66c0-2.226 2.54-3.467 2.736-3.553C6.19 4.17 8.73 5.433 8.73 7.66c0 1.648-1.074 4.173-1.148 4.365ZM11.31 0 9.495 1.589l1.813 1.589 1.814-1.59L11.309 0Z" />
+                                        <path fill="currentColor" d="M7.266 7.614c0 .605-.562 1.1-1.246 1.1-.684 0-1.246-.495-1.246-1.1 0-.604.562-1.1 1.246-1.1.684 0 1.246.496 1.246 1.1Z" />
+                                    </svg>
+
+                                </span>
+
+                            </span>
+
+
+                            <span class="button__text">Онлайн помощник</span>
+
+                        </button>
+
+
+
+
+                    </div>
+
+                    <button type="button" data-menu-burger class="header__toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="menu" data-menu>
+            <div class="menu__container" data-menu-container>
+                <div class="menu__content" data-animate-sequence>
+                    <ul class="menu__list" data-content>
+
+                        <li class="menu__item" data-link>
+
+                            <a href="javascript:void(0);" class="menu__link">Каталог услуг</a>
+
+                        </li>
+
+
+                        <div class="menu__action" data-animate-sequence-el data-animate-sequence-delay="3">
+
+
+                            <button type="button" class="button  button--theme-icon" title="Button">
+
+                                <span class="button__icon">
+                                    <span class="icon icon--24" aria-hidden="true">
+                                        <svg fill="none" width="14" height="21" viewBox="0 0 14 21" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="currentColor" d="m4.213 17.152 1.758 3.28h.025l1.783-3.28-1.783-1.575-1.783 1.575Z" />
+                                            <path fill="currentColor" d="M5.996 1.58C5.605 1.753.67 4.043.67 7.702c0 3.125 2.906 7.876 2.906 7.876l2.419-2.119 2.418 2.119s2.907-4.73 2.907-7.876c-.025-3.66-4.959-5.949-5.325-6.12Zm1.587 10.444-1.587-1.39-1.588 1.39C4.335 11.832 3.26 9.307 3.26 7.66c0-2.226 2.54-3.467 2.736-3.553C6.19 4.17 8.73 5.433 8.73 7.66c0 1.648-1.074 4.173-1.148 4.365ZM11.31 0 9.495 1.589l1.813 1.589 1.814-1.59L11.309 0Z" />
+                                            <path fill="currentColor" d="M7.266 7.614c0 .605-.562 1.1-1.246 1.1-.684 0-1.246-.495-1.246-1.1 0-.604.562-1.1 1.246-1.1.684 0 1.246.496 1.246 1.1Z" />
+                                        </svg>
+
+                                    </span>
+
+                                </span>
+
+
+                                <span class="button__text">Онлайн помощник</span>
+
+                            </button>
+
+
+
+
+                        </div>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="menu__overlay" data-menu-hide></div>
+        </div>
+
+
+
+
+
+        <div class="py-64 bg-white">
+            <div class="container">
+                <p class="h2 mb-24"><code>&block_info</code></p>
+            </div>
+
+            <div class="pb-lg-56 pb-md-56 pb-40">
+                <div class="block-info">
+
+                    <div class="block-info__decor block-info__decor--bottom block-info__decor--theme-gray">
+                    </div>
+
+                    <div class="block-info__container container" data-animate-sequence>
+                        <div class="block-info__content">
+
+                            <h3 class="block-info__title  block-info__title--is-small" data-animate-sequence-el>
+                                Для начала работы ответьте на вопрос, есть ли у вас уже существующий бизнес?
+                            </h3>
+
+
+
+                            <div class="block-info__actions">
+
+                                <div class="block-info__action" data-animate-sequence-el data-animate-sequence-delay="1">
+
+
+                                    <a href="javascript:void(0);" class="button button--size-big button--theme-red" title="Button">
+
+                                        <span class="button__text">Да, у меня уже есть бизнес</span>
+
+                                    </a>
+
+
+
+
+                                </div>
+
+                                <div class="block-info__action" data-animate-sequence-el data-animate-sequence-delay="2">
+
+
+                                    <a href="javascript:void(0);" class="button button--size-big button--theme-blue" title="Button">
+
+                                        <span class="button__text">Нет, но планирую открыть</span>
+
+                                    </a>
+
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-lg-56 pb-md-56 pb-40">
+                <div class="block-info block-info--layout-2 ">
+
+                    <div class="block-info__decor block-info__decor--top block-info__decor--theme-gray">
+                    </div>
+
+                    <div class="block-info__container container" data-animate-sequence>
+                        <div class="block-info__content">
+
+                            <h3 class="block-info__title " data-animate-sequence-el>
+                                Есть вопросы?
+                            </h3>
+
+
+                            <p class="block-info__text" data-animate-sequence-el data-animate-sequence-delay="1">
+                                Задайте интересующие вас вопросы онлайн помощнику
+                            </p>
+
+
+                            <div class="block-info__actions">
+
+                                <div class="block-info__action" data-animate-sequence-el data-animate-sequence-delay="1">
+
+
+                                    <button type="button" class="button  button--theme-red button--theme-icon-bg" title="Button">
+
+                                        <span class="button__icon">
+                                            <span class="icon icon--24" aria-hidden="true">
+                                                <svg fill="none" width="14" height="21" viewBox="0 0 14 21" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="currentColor" d="m4.213 17.152 1.758 3.28h.025l1.783-3.28-1.783-1.575-1.783 1.575Z" />
+                                                    <path fill="currentColor" d="M5.996 1.58C5.605 1.753.67 4.043.67 7.702c0 3.125 2.906 7.876 2.906 7.876l2.419-2.119 2.418 2.119s2.907-4.73 2.907-7.876c-.025-3.66-4.959-5.949-5.325-6.12Zm1.587 10.444-1.587-1.39-1.588 1.39C4.335 11.832 3.26 9.307 3.26 7.66c0-2.226 2.54-3.467 2.736-3.553C6.19 4.17 8.73 5.433 8.73 7.66c0 1.648-1.074 4.173-1.148 4.365ZM11.31 0 9.495 1.589l1.813 1.589 1.814-1.59L11.309 0Z" />
+                                                    <path fill="currentColor" d="M7.266 7.614c0 .605-.562 1.1-1.246 1.1-.684 0-1.246-.495-1.246-1.1 0-.604.562-1.1 1.246-1.1.684 0 1.246.496 1.246 1.1Z" />
+                                                </svg>
+
+                                            </span>
+
+                                        </span>
+
+
+                                        <span class="button__text">Онлайн помощник</span>
+
+                                    </button>
+
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <p class="h2 mb-24"><code>&block-advantages</code></p>
+                <div class="pb-lg-56 pb-md-56 pb-40">
+                    <div class="block-advantages" data-animate-sequence>
+                        <div class="block-advantages__container container" data-animate-sequence>
+
+                            <h2 class="block-advantages__title title-decoration" data-animate-sequence-el data-animate-sequence-delay="0.5">Преимущества</h2>
+
+
+                            <div class="block-advantages__items">
+
+                                <div class="block-advantages__item" data-animate-sequence-el data-animate-sequence-delay="1">
+                                    <div class="card-advantages">
+                                        <div class="card-advantages__container">
+                                            <div class="card-advantages__box">
+
+                                                <div class="card-advantages__decor" style="clip-path: url(#shape-1);">
+                                                </div>
+
+                                                <div class="card-advantages__image">
+
+
+                                                    <img class="image is-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="tmp/cards/card-advantages/img1.png" alt="image alt">
+
+
+
+                                                </div>
+
+
+                                                <span class="icon icon--fit" aria-hidden="true">
+                                                    <svg height="0" width="0" class="svg-clip">
+                                                        <defs>
+                                                            <clipPath id="shape-1" clipPathUnits="objectBoundingBox">
+                                                                <path d="M95.5196 117.962C114.414 137.214 165.183 109.039 150.6 68.7164C136.017 28.3942 121.634 56.2042 88.2605 18.4098C70.2265 -2.01312 50.5013 -14.7476 13.865 37.0551C-9.61391 70.2535 1.73491 132.645 25.9495 130.837C50.1642 129.029 55.3728 77.0561 95.5196 117.962Z" fill="currentColor" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+
+                                                </span>
+
+
+                                            </div>
+
+                                            <div class="card-advantages__count">482</div>
+
+
+                                            <div class="card-advantages__text">Организаций поддержки по&nbsp;Российской Федерации</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-advantages__item" data-animate-sequence-el data-animate-sequence-delay="2">
+                                    <div class="card-advantages">
+                                        <div class="card-advantages__container">
+                                            <div class="card-advantages__box">
+
+                                                <div class="card-advantages__decor" style="clip-path: url(#shape-2);">
+                                                </div>
+
+                                                <div class="card-advantages__image">
+
+
+                                                    <img class="image is-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="tmp/cards/card-advantages/img2.png" alt="image alt">
+
+
+
+                                                </div>
+
+
+                                                <span class="icon icon--fit" aria-hidden="true">
+                                                    <svg height="0" width="0" class="svg-clip">
+                                                        <defs>
+                                                            <clipPath id="shape-2" clipPathUnits="objectBoundingBox">
+                                                                <path d="M59.0736 23.0418C36.4239 4.91273 -15.6724 41.2025 4.6013 82.2824C24.8751 123.362 37.4594 91.9887 77.8814 128.042C99.7242 147.523 122.562 158.616 156.706 98.9503C178.587 60.7128 159.409 -4.24623 133.285 0.689754C107.162 5.62574 107.2 61.5621 59.0736 23.0418Z" fill="currentColor" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </span>
+
+
+                                            </div>
+
+                                            <div class="card-advantages__count">5240</div>
+
+
+                                            <div class="card-advantages__text">Оказано услуг государственной поддержки</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-advantages__item" data-animate-sequence-el data-animate-sequence-delay="3">
+                                    <div class="card-advantages">
+                                        <div class="card-advantages__container">
+                                            <div class="card-advantages__box">
+
+                                                <div class="card-advantages__decor" style="clip-path: url(#shape-3);">
+                                                </div>
+
+                                                <div class="card-advantages__image">
+
+
+                                                    <img class="image is-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="tmp/cards/card-advantages/img3.png" alt="image alt">
+
+
+
+                                                </div>
+
+
+                                                <span class="icon icon--fit" aria-hidden="true">
+                                                    <svg height="0" width="0" class="svg-clip">
+                                                        <defs>
+                                                            <clipPath id="shape-3" clipPathUnits="objectBoundingBox">
+                                                                <path d="M133.814 71.4578C161.482 65.5269 159.171 10.157 113.389 2.16813C67.6072 -5.82073 87.2832 19.6507 34.7775 28.2563C6.40497 32.9065 -15.4153 42.7323 16.4424 98.22C36.8588 133.78 102.237 155.302 112.292 134.632C122.348 113.963 75.0254 84.0598 133.814 71.4578Z" fill="currentColor" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </span>
+
+
+                                            </div>
+
+                                            <div class="card-advantages__count">1360</div>
+
+
+                                            <div class="card-advantages__text">Зарегестрировано участников проекта</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <p class="h2 mb-24"><code>&block-posts</code></p>
+                <div class="pb-lg-56 pb-md-56 pb-40">
+                    <div class="block-posts" data-animate-sequence>
+                        <div class="block-posts__container container" data-animate-sequence>
+
+                            <h2 class="block-posts__title title-decoration" data-animate-sequence-el data-animate-sequence-delay="0.5">Истории успеха</h2>
+
+
+                            <div class="block-posts__items">
+
+                                <div class="block-posts__item" data-animate-sequence-el data-animate-sequence-delay="1">
+                                    <div class="card-post card-post--layout-1 " data-animate-sequence>
+                                        <div class="card-post__image">
+                                            <div class="card-post__decor" style="clip-path: url(#shape-4);">
+                                            </div>
+
+                                            <div class="card-post__img">
+
+
+                                                <img class="image is-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="tmp/cards/card-post/img1.jpg" alt="image alt" style="clip-path: url(#shape-4_1);">
+
+
+
+                                            </div>
+
+
+
+                                            <span class="icon icon--fit" aria-hidden="true">
+                                                <svg height="0" width="0" class="svg-clip">
+                                                    <defs>
+                                                        <clipPath id="shape-4" clipPathUnits="objectBoundingBox">
+                                                            <path d="M164.722 240.119C215.946 240.119 306.554 204.969 278.862 128.4C259.807 75.7108 250.988 86.9743 195.359 33.3221C158.119 -2.59404 88.7828 -30.0918 19.2131 68.2777C-25.3716 131.319 17.3714 237.454 61.7618 246.015C107.037 254.746 112.46 240.119 164.722 240.119Z" fill="#F1F2F2" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+
+                                            <span class="icon icon--fit" aria-hidden="true">
+                                                <svg height="0" width="0" class="svg-clip">
+                                                    <defs>
+                                                        <clipPath id="shape-4_1" clipPathUnits="objectBoundingBox">
+                                                            <path d="M118.153 21.399C88.9451 -0.356899 22.3499 -18.798 5.61923 36.6238C-5.8937 74.7613 3.91851 72.0841 12.8512 126.304C18.831 162.601 46.6882 207.729 128.138 181.186C180.336 164.176 201.042 85.5028 179.366 61.7677C157.258 37.5593 147.954 43.5964 118.153 21.399Z" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+
+
+                                        </div>
+                                        <div class="card-post__info">
+
+                                            <h4 class="card-post__title" data-animate-sequence-el>
+                                                Пекарня “Русские традиции”
+                                            </h4>
+
+
+                                            <div class="card-post__quote" data-animate-sequence-el data-animate-sequence-delay="2">
+                                                <div class="quote">
+
+                                                    <span class="quote__icon">
+                                                        <span class="icon icon--fit" aria-hidden="true">
+                                                            <svg fill="none" viewBox="0 0 46 33">
+                                                                <path fill="currentColor" d="m.032 25.328 7.086 7.09 7.087-7.09-7.087-7.091-7.086 7.09ZM8.925 16.463l7.087 7.091 7.086-7.091-7.086-7.091-7.087 7.091ZM0 7.51l7.086 7.092 7.087-7.092L7.086.42 0 7.51ZM22.608 25.328l7.087 7.09 7.086-7.09-7.086-7.091-7.087 7.09ZM31.501 16.463l7.087 7.091 7.087-7.091-7.087-7.091-7.087 7.091ZM22.576 7.51l7.087 7.092 7.086-7.092L29.663.42l-7.087 7.09Z" />
+                                                            </svg>
+
+                                                        </span>
+
+                                                    </span>
+
+
+                                                    <p class="quote__text">
+                                                        Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива».
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-post__text" data-animate-sequence-el data-animate-sequence-delay="3">
+                                                Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие расчеты, учет рисков и перспектив, анализ рынка, налаживание сбыта.
+                                            </div>
+
+
+                                            <div class="card-post__action" data-animate-sequence-el data-animate-sequence-delay="4">
+
+
+                                                <button type="button" class="button  button--size-small button--theme-line button--theme-blue" title="Button">
+
+                                                    <span class="button__icon">
+                                                        <span class="icon icon--16" aria-hidden="true">
+                                                            <svg fill="none" width="16" height="10" viewBox="0 0 16 10">
+                                                                <path fill="currentColor" d="M12.01 3.659H0v2.16h12.01v3.24L16 4.739 12.01.419v3.24Z" />
+                                                            </svg>
+
+                                                        </span>
+
+                                                    </span>
+
+
+                                                    <span class="button__text">Читать историю</span>
+
+                                                </button>
+
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-posts__item" data-animate-sequence-el data-animate-sequence-delay="2">
+                                    <div class="card-post card-post--layout-2 card-post--is-turn" data-animate-sequence>
+                                        <div class="card-post__image">
+                                            <div class="card-post__decor" style="clip-path: url(#shape-5);">
+                                            </div>
+
+                                            <div class="card-post__img">
+
+
+                                                <img class="image is-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="tmp/cards/card-post/img2.jpg" alt="image alt" style="clip-path: url(#shape-5_1);">
+
+
+
+                                            </div>
+
+
+
+                                            <span class="icon icon--fit" aria-hidden="true">
+                                                <svg height="0" width="0" class="svg-clip">
+                                                    <defs>
+                                                        <clipPath id="shape-5" clipPathUnits="objectBoundingBox">
+                                                            <path d="M268.419 132.805C271.756 76.0563 242.544 -0.359667 152.189 0.680205C110.96 1.15469 94.7704 30.2292 41.3109 85.3913C1.3521 126.623 -35.8864 199.332 68.5618 282.815C135.499 336.316 258.211 292.096 271.475 242.674C281.959 203.611 265.014 190.705 268.419 132.805Z" fill="#F1F2F2" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+
+                                            <span class="icon icon--fit" aria-hidden="true">
+                                                <svg height="0" width="0" class="svg-clip">
+                                                    <defs>
+                                                        <clipPath id="shape-5_1" clipPathUnits="objectBoundingBox">
+                                                            <path d="M115.755 191.552C154.703 192.883 212.768 191.48 206.774 121.875C204.039 90.1149 182.989 58.8133 142.194 18.8226C111.7 -11.0689 65.4041 -12.3668 14.5026 69.9444C-18.1182 122.695 13.9687 209.942 48.4947 219.083C75.7832 226.309 76.0163 190.193 115.755 191.552Z" fill="#F1F2F2" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+
+                                            </span>
+
+
+
+                                        </div>
+                                        <div class="card-post__info">
+
+                                            <h4 class="card-post__title" data-animate-sequence-el>
+                                                Автомастерская
+                                            </h4>
+
+
+                                            <div class="card-post__quote" data-animate-sequence-el data-animate-sequence-delay="2">
+                                                <div class="quote">
+
+                                                    <span class="quote__icon">
+                                                        <span class="icon icon--fit" aria-hidden="true">
+                                                            <svg fill="none" viewBox="0 0 46 33">
+                                                                <path fill="currentColor" d="m.032 25.328 7.086 7.09 7.087-7.09-7.087-7.091-7.086 7.09ZM8.925 16.463l7.087 7.091 7.086-7.091-7.086-7.091-7.087 7.091ZM0 7.51l7.086 7.092 7.087-7.092L7.086.42 0 7.51ZM22.608 25.328l7.087 7.09 7.086-7.09-7.086-7.091-7.087 7.09ZM31.501 16.463l7.087 7.091 7.087-7.091-7.087-7.091-7.087 7.091ZM22.576 7.51l7.087 7.092 7.086-7.092L29.663.42l-7.087 7.09Z" />
+                                                            </svg>
+
+                                                        </span>
+
+                                                    </span>
+
+
+                                                    <p class="quote__text">
+                                                        Первые дни независимости. Когда не нужно рано вставать, когда не нужно отпрашиваться, что бы успеть съездить в магазин, когда удобно.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-post__text" data-animate-sequence-el data-animate-sequence-delay="3">
+                                                Встреча в городе Н с моими будущими партнерами была плодотворной. Я не смог заснуть до пяти утра – не потому что не спалось, но потому что мысли о будущих перспективах просто взрывали мой мозг.
+                                            </div>
+
+
+                                            <div class="card-post__action" data-animate-sequence-el data-animate-sequence-delay="4">
+
+
+                                                <button type="button" class="button  button--size-small button--theme-line button--theme-blue" title="Button">
+
+                                                    <span class="button__icon">
+                                                        <span class="icon icon--16" aria-hidden="true">
+                                                            <svg fill="none" width="16" height="10" viewBox="0 0 16 10">
+                                                                <path fill="currentColor" d="M12.01 3.659H0v2.16h12.01v3.24L16 4.739 12.01.419v3.24Z" />
+                                                            </svg>
+
+                                                        </span>
+
+                                                    </span>
+
+
+                                                    <span class="button__text">Читать историю</span>
+
+                                                </button>
+
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-posts__item" data-animate-sequence-el data-animate-sequence-delay="3">
+                                    <div class="card-post card-post--layout-3 " data-animate-sequence>
+                                        <div class="card-post__image">
+                                            <div class="card-post__decor" style="clip-path: url(#shape-4);">
+                                            </div>
+
+                                            <div class="card-post__img">
+
+
+                                                <img class="image is-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="tmp/cards/card-post/img3.jpg" alt="image alt" style="clip-path: url(#shape-6);">
+
+
+
+                                            </div>
+
+
+
+                                            <span class="icon icon--fit" aria-hidden="true">
+                                                <svg height="0" width="0" class="svg-clip">
+                                                    <defs>
+                                                        <clipPath id="shape-4" clipPathUnits="objectBoundingBox">
+                                                            <path d="M164.722 240.119C215.946 240.119 306.554 204.969 278.862 128.4C259.807 75.7108 250.988 86.9743 195.359 33.3221C158.119 -2.59404 88.7828 -30.0918 19.2131 68.2777C-25.3716 131.319 17.3714 237.454 61.7618 246.015C107.037 254.746 112.46 240.119 164.722 240.119Z" fill="#F1F2F2" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+
+                                            <span class="icon icon--fit" aria-hidden="true">
+                                                <svg height="0" width="0" class="svg-clip">
+                                                    <defs>
+                                                        <clipPath id="shape-6" clipPathUnits="objectBoundingBox">
+                                                            <path d="M128.404 186.23C168.381 186.23 228.974 161.538 217.484 99.0396C209.795 57.2155 189.401 52.1173 152.314 24.8365C119.788 0.910341 69.1374 -24.6545 14.8422 52.1173C-19.9536 101.318 16.1112 185.857 51.3991 192.911C86.7276 199.973 87.6158 186.23 128.404 186.23Z" fill="#F1F2F2" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+
+
+
+                                        </div>
+                                        <div class="card-post__info">
+
+                                            <h4 class="card-post__title" data-animate-sequence-el>
+                                                Салон красоты “Эмират”
+                                            </h4>
+
+
+                                            <div class="card-post__quote" data-animate-sequence-el data-animate-sequence-delay="2">
+                                                <div class="quote">
+
+                                                    <span class="quote__icon">
+                                                        <span class="icon icon--fit" aria-hidden="true">
+                                                            <svg fill="none" viewBox="0 0 46 33">
+                                                                <path fill="currentColor" d="m.032 25.328 7.086 7.09 7.087-7.09-7.087-7.091-7.086 7.09ZM8.925 16.463l7.087 7.091 7.086-7.091-7.086-7.091-7.087 7.091ZM0 7.51l7.086 7.092 7.087-7.092L7.086.42 0 7.51ZM22.608 25.328l7.087 7.09 7.086-7.09-7.086-7.091-7.087 7.09ZM31.501 16.463l7.087 7.091 7.087-7.091-7.087-7.091-7.087 7.091ZM22.576 7.51l7.087 7.092 7.086-7.092L29.663.42l-7.087 7.09Z" />
+                                                            </svg>
+
+                                                        </span>
+
+                                                    </span>
+
+
+                                                    <p class="quote__text">
+                                                        Когда же появилась возможность открыть свой бизнес, я рассматривала различные варианты, изучала всевозможные направления.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="card-post__action" data-animate-sequence-el data-animate-sequence-delay="4">
+
+
+                                                <button type="button" class="button  button--size-small button--theme-line button--theme-blue" title="Button">
+
+                                                    <span class="button__icon">
+                                                        <span class="icon icon--16" aria-hidden="true">
+                                                            <svg fill="none" width="16" height="10" viewBox="0 0 16 10">
+                                                                <path fill="currentColor" d="M12.01 3.659H0v2.16h12.01v3.24L16 4.739 12.01.419v3.24Z" />
+                                                            </svg>
+
+                                                        </span>
+
+                                                    </span>
+
+
+                                                    <span class="button__text">Читать историю</span>
+
+                                                </button>
+
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="h2 mb-24"><code>&hero</code></p>
+                <div class="pb-lg-56 pb-md-56 pb-40">
+                    <div class="hero ">
+                        <div class="hero__container container" data-animate-sequence>
+                            <div class="hero__wrap">
+
+                                <div class="hero__image" data-animate-sequence-el>
+
+
+
+                                    <img class="image is-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="tmp/hero/hero-main/logo.png" alt="image alt">
+
+
+
+
+                                </div>
+
+
+                                <h1 class="visually-hidden">Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать свой бизнес</h1>
+
+
+                                <div class="hero__title" data-animate-sequence-el data-animate-sequence-delay="1">
+                                    Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать свой бизнес
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="hero__background">
+
+                            <picture class="image-adaptive">
+
+
+                                <source media="(max-width: 989px)" srcset="tmp/hero/hero-main/bg.png 1x">
+
+                                <img class="image" src="tmp/hero/hero-main/bg.png" alt="alt image">
+                            </picture>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__wrapper" data-animate-sequence>
+                    <nav class="footer__navigation">
+
+                        <ul class="footer__items">
+
+                            <li class="footer__item" data-animate-sequence-el data-animate-sequence-delay="1"><a class="footer__link link" href=javascript:void(0);>Услуги и поддержка</a></li>
+
+                            <li class="footer__item" data-animate-sequence-el data-animate-sequence-delay="2"><a class="footer__link link" href=javascript:void(0);>Сервисы для бизнеса</a></li>
+
+                            <li class="footer__item" data-animate-sequence-el data-animate-sequence-delay="3"><a class="footer__link link" href=javascript:void(0);>Общая информация</a></li>
+
+                            <li class="footer__item" data-animate-sequence-el data-animate-sequence-delay="4"><a class="footer__link link" href=javascript:void(0);>Защита бизнеса</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                    <div class="footer__contacts">
+                        <div class="footer__item" data-animate-sequence-el data-animate-sequence-delay="5">
+                            <a class="footer__link link" href=mailto:service@in-line.ru>service@in-line.ru</a>
+                        </div>
+                        <div class="footer__item" data-animate-sequence-el data-animate-sequence-delay="6">
+                            <a class="footer__link link" href=tel:8-800-200-74-30>8-800-200-74-30</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script type="text/javascript" src="js/vendors~index.chunk.js?1692166148530" defer></script>
+        <script type="text/javascript" src="js/index.js?1692166148530" defer></script>
+        <script type="text/javascript" src="js/components.js?1692166148530" defer></script>
+    </body>
+
+</html>
